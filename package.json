@@ -1,9 +1,11 @@
 {
   "private": true,
   "type": "module",
-  "description": "Статический сайт АКС",
+  "description": "Material admin extended dark",
   "main": "gulpfile.js",
-  "browserslist": ["last 2 versions"],
+  "browserslist": [
+    "last 2 versions"
+  ],
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
