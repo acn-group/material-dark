@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <section class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "pagination"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Pagination <small>Pagination links indicate a series of related content exists across multiple pages. Typically these are used where a multi-page approach to long lists of content improves general performance, such as in search results or inboxes.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic example</h4>
+                        <h6 class="card-subtitle">Paginations can be used with either page numbers only or page numbers with direction/boundary links.</h6>
+
+                        <h5 class="card-body__title">Numbers only</h5>
+
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            </ul>
+                        </nav>
+
+                        <br>
+
+                        <h5 class="card-body__title">Numbers with direction links</h5>
+
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item pagination-prev"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                            </ul>
+                        </nav>
+
+                        <br>
+
+                        <h5 class="card-body__title">Numbers, direction links and boundary links</h5>
+
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-left"></i></a></li>
+                                <li class="page-item pagination-prev"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Disabled and active states</h4>
+                        <h6 class="card-subtitle">Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable and <code>.active</code> to indicate the current page.</h6>
+
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item pagination-first disabled"><a class="page-link" href="#"><i class="zwicon-expand-left"></i></a></li>
+                                <li class="page-item pagination-prev disabled"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Alignment</h4>
+                        <h6 class="card-subtitle">Change the alignment of pagination components with Bootstrap's flexbox utilities.</h6>
+
+                        <h5 class="card-body__title">Centered</h5>
+
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-left"></i></a></li>
+                                <li class="page-item pagination-prev"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-right"></i></a></li>
+                            </ul>
+                        </nav>
+
+                        <h5 class="card-body__title">Right aligned</h5>
+
+                        <nav>
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-left"></i></a></li>
+                                <li class="page-item pagination-prev"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                                <li class="page-item pagination-first"><a class="page-link" href="#"><i class="zwicon-expand-right"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </section>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

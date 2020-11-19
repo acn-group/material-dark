@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "forms",
+                "link": "form-validation"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Form Validation</h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic examples</h4>
+                        <h6 class="card-subtitle">For custom Bootstrap form validation messages, you’ll need to add the novalidate boolean attribute to your <code>&#x3C;form&#x3E;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript.</h6>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="card-body__title">Valid stats</h5>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-valid" placeholder="Default" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-valid" placeholder="With description" required />
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h5 class="card-body__title">Invalid stats</h5>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-invalid" placeholder="Default" required />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-invalid" placeholder="With description" required />
+                                    <div class="invalid-feedback">Please provide a valid input</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Tooltips</h2>
+                        <h6 class="card-subtitle">If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</h6>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="card-body__title">Valid stats</h5>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-valid" placeholder="Full Name" value="Malinda Hollaway" required />
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <h5 class="card-body__title">Invalid stats</h5>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control is-invalid" placeholder="Email Address" value="malinda@hollaway" required />
+                                    <div class="invalid-tooltip">
+                                        Invalid input!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

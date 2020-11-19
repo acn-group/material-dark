@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "navs"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Navs <small>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Base nav</h4>
+                        <h6 class="card-subtitle">The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling. No active states are included in the base nav.</h6>
+
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+
+                        <br>
+                        <br>
+
+                        <p>Classes are used throughout, so your markup can be super flexible. Use <code>&#x3C;ul&#x3E;</code>s like above, or roll your own with say a <code>&#x3C;nav&#x3E;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup</p>
+
+                        <nav class="nav">
+                            <a class="nav-link active" href="">Active</a>
+                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link disabled" href="">Disabled</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Horizontal alignment</h4>
+                        <h6 class="card-subtitle">Change the horizontal alignment of your nav with Bootstrap's flexbox utilities. By default, navs are left-aligned, but you can easily change them to center or right aligned.</h6>
+
+                        <p>Centered with <code>.justify-content-center</code></p>
+
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <p>Right-aligned with <code>.justify-content-end</code></p>
+
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Vertical alignment</h4>
+                        <h6 class="card-subtitle">Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</h6>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <p>As always, vertical navigation is possible without <code>&#x3C;ul&#x3E;</code>s, too.</p>
+
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="">Active</a>
+                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link disabled" href="">Disabled</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Pills</h4>
+                        <h6 class="card-subtitle">Take that same HTML, but use <code>.nav-pills</code> instead</h6>
+
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+
+                        <br>
+                        <br>
+
+                        <h5 class="card-body__title">Fill and justify</h5>
+                        <p>Force your <code>.nav’s</code> contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your <code>.nav-items</code>, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
+
+                        <br>
+
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

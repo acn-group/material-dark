@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "components",
+                "link": "toast"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Toasts <small>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic example</h4>
+                        <h6 class="card-subtitle">Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your "toasted" content and strongly encourage a dismiss button.</h6>
+
+                        <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <i class="zwicon-info-circle text-blue"></i>
+                                <strong>Bootstrap</strong>
+                                <small>11 mins ago</small>
+
+                                <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Placement</h4>
+                        <h6 class="card-subtitle">Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the <code>.toast</code>.</h6>
+
+                        <div class="toast-demo-container mb-3">
+                            <div class="toast fade show toast--right" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <i class="zwicon-arrow-top-right text-orange"></i>
+                                    <strong>Placement</strong>
+                                    <small>15 mins ago</small>
+
+                                    <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                                </div>
+                                <div class="toast-body">
+                                    Look me, I'm positioned in top right!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toast-demo-container mb-3">
+                            <div class="toast fade show toast--bottom-right" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <i class="zwicon-arrow-bottom-right text-green"></i>
+                                    <strong>Placement</strong>
+                                    <small>20 mins ago</small>
+
+                                    <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                                </div>
+                                <div class="toast-body">
+                                    Look me, I'm positioned in bottom right!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toast-demo-container">
+                            <div class="toast fade show toast--bottom-left" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <i class="zwicon-arrow-bottom-left text-red"></i>
+                                    <strong>Placement</strong>
+                                    <small>30 mins ago</small>
+
+                                    <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                                </div>
+                                <div class="toast-body">
+                                    Look me, I'm positioned in bottom left!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Stacking</h4>
+                        <h6 class="card-subtitle">When you have multiple toasts, we default to vertically stacking them in a readable manner.</h6>
+
+                        <div class="toast-demo-container">
+                            <div class="toast-wrapper">
+                                <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <i class="zwicon-smile text-red"></i>
+                                        <strong>Bootstrap</strong>
+                                        <small>11 mins ago</small>
+
+                                        <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                                    </div>
+                                    <div class="toast-body">
+                                        See? Just like this.
+                                    </div>
+                                </div>
+
+                                <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                                    <div class="toast-header">
+                                        <i class="zwicon-thumbs-up text-green"></i>
+                                        <strong>Bootstrap</strong>
+                                        <small>11 mins ago</small>
+
+                                        <i class="zwicon-close-circle" data-dismiss="toast"></i>
+                                    </div>
+                                    <div class="toast-body">
+                                        Heads up, toasts will stack automatically
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @@include('_includes/_footer.html')
+                </div>
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

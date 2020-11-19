@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendors -->
+        <link href="resources/vendors/animate.css/animate.min.css" rel="stylesheet">
+        <link href="resources/vendors/zwicon/zwicon.min.css" rel="stylesheet">
+        <link href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css" rel="stylesheet">
+        <link href="resources/vendors/fullcalendar/core/main.min.css" rel="stylesheet">
+        <link href="resources/vendors/fullcalendar/daygrid/main.min.css" rel="stylesheet">
+
+        <link href="resources/css/app.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "link": "home"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Dashboard<small>Welcome to the unique Material Admin Extended Dark web app experience!</small></h1>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        @@include('_includes/_widgets/_server-process.html')
+                    </div>
+                    <div class="col-md-6">
+                        @@include('_includes/_widgets/_sales-statistics.html')
+                    </div>
+                </div>
+
+                @@include('_includes/_widgets/_stats.html')
+
+                <div class="card-columns widget-lists">
+                    @@include('_includes/_widgets/_signups.html')
+
+                    @@include('_includes/_widgets/_tickets.html')
+
+                    @@include('_includes/_widgets/_todo.html')
+
+                    @@include('_includes/_widgets/_visitors.html')
+
+                    @@include('_includes/_widgets/_recent-posts.html')
+
+                    @@include('_includes/_widgets/_featured-post.html')
+
+                    @@include('_includes/_widgets/_calendar.html')
+
+                    @@include('_includes/_widgets/_growth-rate.html')
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/headroom/headroom.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+        <script src="resources/vendors/flot/jquery.flot.js"></script>
+        <script src="resources/vendors/flot/jquery.flot.resize.js"></script>
+        <script src="resources/vendors/flot/flot.curvedlines/curvedLines.js"></script>
+        <script src="resources/vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="resources/vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="resources/vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="resources/vendors/fullcalendar/core/main.min.js"></script>
+        <script src="resources/vendors/fullcalendar/daygrid/main.min.js"></script>
+
+        <!-- Site Functions & Actions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

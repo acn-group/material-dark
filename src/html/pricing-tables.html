@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "pricing-tables"
+            })
+
+            <section class="content">
+                <div class="content__inner">
+                    <header class="content__title">
+                        <h1>Pricing Tables - 1 <small>3 Column with highlighted item</small></h1>
+                    </header>
+
+                    <div class="row price-table price-table--highlight">
+                        <div class="col-md-4">
+                            <div class="price-table__item">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Strawberry</div>
+                                    <div class="price-table__desc">Pellentesque ornare lacinia venenatis vestibulum</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $124.90 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>In dapibus ipsum sit amet leo</li>
+                                    <li>Vestibulum ut mauris tellus donec</li>
+                                    <li>Purna lectus venenatis felis nonsemper</li>
+                                    <li>Aliquam erat volutpat hasellus ultri</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-table__item price-table__item--popular">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Raspberry</div>
+                                    <div class="price-table__desc">Nullam dolor nibh ultricies vehicula utelit ornaresred</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $250.00 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>Morbi leo risus porta acconseetur</li>
+                                    <li>Nullam quis risus eget urna mollis ornare</li>
+                                    <li>Purna lectus venenatis felis nonsemper</li>
+                                    <li>Aenean ellentesque ornare sem lacinia</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-table__item">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Cranberry</div>
+                                    <div class="price-table__desc">Vivamus sagittis lacus augue laoreet rutrum faucibus</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $124.90 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>Duis mollis estnon commodo luctus</li>
+                                    <li>Vivamus sagittis lacus augue laoreeterest</li>
+                                    <li>Etiam porta malesuada mollis euismod</li>
+                                    <li>Praesent commodo magnanisl consec</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <header class="content__title">
+                        <h1>Pricing Tables - 2 <small>Basic 3 column pricing table</small></h1>
+                    </header>
+
+                    <div class="row price-table price-table--basic">
+                        <div class="col-md-4">
+                            <div class="price-table__item">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Strawberry</div>
+                                    <div class="price-table__desc">Pellentesque ornare lacinia venenatis vestibulum</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $124.90 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>In dapibus ipsum sit amet leo</li>
+                                    <li>Vestibulum ut mauris tellus donec</li>
+                                    <li>Purna lectus venenatis felis nonsemper</li>
+                                    <li>Aliquam erat volutpat hasellus ultri</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-table__item">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Raspberry</div>
+                                    <div class="price-table__desc">Nullam dolor nibh ultricies vehicula utelit ornaresred</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $250.00 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>Morbi leo risus porta acconseetur</li>
+                                    <li>Nullam quis risus eget urna mollis ornare</li>
+                                    <li>Purna lectus venenatis felis nonsemper</li>
+                                    <li>Aenean ellentesque ornare sem lacinia</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="price-table__item">
+                                <header class="price-table__header">
+                                    <div class="price-table__title">Cranberry</div>
+                                    <div class="price-table__desc">Vivamus sagittis lacus augue laoreet rutrum faucibus</div>
+                                </header>
+                                <div class="price-table__price">
+                                    $124.90 |
+                                    <small>month</small>
+                                </div>
+                                <ul class="price-table__info">
+                                    <li>Duis mollis estnon commodo luctus</li>
+                                    <li>Vivamus sagittis lacus augue laoreeterest</li>
+                                    <li>Etiam porta malesuada mollis euismod</li>
+                                    <li>Praesent commodo magnanisl consec</li>
+                                </ul>
+                                <a href="" class="price-table__action">Select Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

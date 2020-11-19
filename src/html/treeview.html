@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+        <link rel="stylesheet" href="resources/vendors/jqtree/jqtree.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "components",
+                "link": "treeview"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Tree View Widget <small>JqTree is a jQuery widget for displaying a tree structure in html. It supports json data, loading via ajax and drag-and-drop.</small></h1>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Basic example</h4>
+                                <h6 class="card-subtitle">Load a simple json data in javascript tree</h6>
+
+                                <div class="treeview"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Drag and drop</h4>
+                                <h6 class="card-subtitle">Add drag-and-drop support by setting the option <code>dragAndDrop</code> to <code>true</code>. You can now drag tree nodes to another position.</h6>
+
+                                <div class="treeview-drag"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Expanded</h4>
+                                <h6 class="card-subtitle">Expand all hidden branches using <code>autoOpen</code></h6>
+
+                                <div class="treeview-expanded"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">autoEscape</h4>
+                                <h6 class="card-subtitle">You can put html in the node titles setting the <code>autoEscape</code> option to <code>false</code></h6>
+
+                                <div class="treeview-escape"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+        <script src="resources/vendors/jqtree/jqtree.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

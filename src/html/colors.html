@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "colors"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Colors <small>All these colors are available in SCSS variable. You can include this with any class/ID as mentioned below.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Color</h4>
+                        <h6 class="card-subtitle">Utility text color casses from both Bootstrap and Super Admin 2.0.</h6>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50%">Bootstrap</th>
+                                        <th>Custom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="text-primary">.text-primary</span></td>
+                                        <td><span class="text-teal">.text-teal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-secondary">.text-secondary</span></td>
+                                        <td><span class="text-purple">.text-purple</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-success">.text-success</span></td>
+                                        <td><span class="text-red">.text-red</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-danger">.text-danger</span></td>
+                                        <td><span class="text-amber">.text-amber</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-warning">.text-warning</span></td>
+                                        <td><span class="text-blue">.text-blue</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-info">.text-info</span></td>
+                                        <td><span class="text-green">.text-green</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-light">.text-light</span></td>
+                                        <td><span class="text-cyan">.text-cyan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-dark">.text-dark</span></td>
+                                        <td><span class="text-yellow">.text-yellow</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-body">.text-body</span></td>
+                                        <td><span class="text-lime">.text-lime</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-muted">.text-muted</span></td>
+                                        <td><span class="text-orange">.text-orange</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-white">.text-white</span></td>
+                                        <td><span class="text-pink">.text-pink</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-black-50">.text-black-50</span></td>
+                                        <td><span class="text-indigo">.text-indigo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="text-white-50">.text-white-50</span></td>
+                                        <td><span class="text-brown">.text-brown</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="text-blue-grey">.text-blue-grey</span></td>
+                                    </tr><tr>
+                                        <td></td>
+                                        <td><span class="text-black">.text-black</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Background color</h4>
+                        <h6 class="card-subtitle">Easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Bootstrap background utilities do not set <code>color</code>, so in some cases you’ll want to use <code>.bg-*</code> utilities.</h6>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 33%">Bootstrap</th>
+                                        <th style="width: 33%">Custom</th>
+                                        <th style="width: 33%">Custom Gradient</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="color-demo bg-primary text-white">.bg-primary</span></td>
+                                        <td><span class="color-demo bg-teal text-dark">.bg-teal</span></td>
+                                        <td><span class="color-demo bg-gradient-teal text-dark">.bg-gradient-teal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-secondary text-white">.bg-secondary</span></td>
+                                        <td><span class="color-demo bg-purple text-white">.bg-purple</span></td>
+                                        <td><span class="color-demo bg-gradient-purple text-white">.bg-gradient-purple</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-success text-white">.bg-success</span></td>
+                                        <td><span class="color-demo bg-red text-white">.bg-red</span></td>
+                                        <td><span class="color-demo bg-gradient-red text-white">.bg-gradient-red</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-danger text-white">.bg-danger</span></td>
+                                        <td><span class="color-demo bg-amber text-white">.bg-amber</span></td>
+                                        <td><span class="color-demo bg-gradient-amber text-white">.bg-gradient-amber</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-warning text-white">.bg-warning</span></td>
+                                        <td><span class="color-demo bg-blue text-white">.bg-blue</span></td>
+                                        <td><span class="color-demo bg-gradient-blue text-white">.bg-gradient-blue</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-info text-white">.bg-info</span></td>
+                                        <td><span class="color-demo bg-green text-white">.bg-green</span></td>
+                                        <td><span class="color-demo bg-gradient-green text-white">.bg-gradient-green</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-light text-dark">.bg-light</span></td>
+                                        <td><span class="color-demo bg-cyan text-dark">.bg-cyan</span></td>
+                                        <td><span class="color-demo bg-gradient-cyan text-dark">.bg-gradient-cyan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-dark text-white">.bg-dark</span></td>
+                                        <td><span class="color-demo bg-yellow text-dark">.bg-yellow</span></td>
+                                        <td><span class="color-demo bg-gradient-yellow text-dark">.bg-gradient-yellow</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-white text-dark">.bg-white</span></td>
+                                        <td><span class="color-demo bg-lime text-white">.bg-lime</span></td>
+                                        <td><span class="color-demo bg-gradient-lime text-white">.bg-gradient-lime</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="color-demo bg-transparent">.bg-transparent</span></td>
+                                        <td><span class="color-demo bg-orange text-white">.bg-orange</span></td>
+                                        <td><span class="color-demo bg-gradient-orange text-white">.bg-gradient-orange</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="color-demo bg-pink text-white">.bg-pink</span></td>
+                                        <td><span class="color-demo bg-gradient-pink text-white">.bg-gradient-pink</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="color-demo bg-indigo text-white">.bg-indigo</span></td>
+                                        <td><span class="color-demo bg-gradient-indigo text-white">.bg-gradient-indigo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="color-demo bg-brown text-white">.bg-brown</span></td>
+                                        <td><span class="color-demo bg-gradient-brown text-white">.bg-gradient-brown</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="color-demo bg-blue-grey text-white">.bg-blue-grey</span></td>
+                                        <td><span class="color-demo bg-gradient-blue-grey text-white">.bg-gradient-blue-grey</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="color-demo bg-black text-white">.bg-black</span></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

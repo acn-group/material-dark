@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "animations"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>CSS Animations</h1>
+                </header>
+
+                <div class="widget-lists card-columns">
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Attention Seekers</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <img class="animated" src="demo/img/images/1.jpg" alt="">
+
+                            <div class="row form-row mt-3">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">bounce</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flash</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">pulse</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">rubberBand</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">shake</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">swing</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">tada</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">wobble</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">jello</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">heartBeat</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Flippers</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <img class="animated" src="demo/img/images/2.jpg" alt="">
+
+                            <div class="row form-row mt-3">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flip</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flipInX</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flipInY</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flipOutX</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">flipOutY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Light Speed</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <img class="animated" src="demo/img/images/3.jpg" alt="">
+
+                            <div class="row form-row mt-3">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">lightSpeedIn</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">lightSpeedOut</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Specials</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <img class="animated" src="demo/img/images/4.jpg" alt="">
+
+                            <div class="row form-row mt-3">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">hinge</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">rollIn</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">rollOut</button>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <button class="btn btn-block btn-theme">jackInTheBox</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Bounce</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <ul class="nav nav-tabs nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#bounce-entrance" role="tab">Entrance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#bounce-exit" role="tab">Exit</a>
+                                </li>
+                            </ul>
+
+                            <img class="animated" src="demo/img/images/5.jpg" alt="">
+
+                            <div class="tab-content pt-0">
+                                <div class="tab-pane active fade show" id="bounce-entrance">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceIn</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceInDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceInLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceInRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceInUp</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="bounce-exit">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceOut</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceOutDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceOutLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceOutRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">bounceOutUp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Rotate</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <ul class="nav nav-tabs nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#rotate-entrance" role="tab">Entrance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#rotate-exit" role="tab">Exit</a>
+                                </li>
+                            </ul>
+
+                            <img class="animated" src="demo/img/images/6.jpg" alt="">
+
+                            <div class="tab-content pt-0">
+                                <div class="tab-pane active show fade" id="rotate-entrance">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateIn</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateInDownLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateInDownRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateInUpLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateInUpRight</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="rotate-exit">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateOut</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateOutDownLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateOutDownRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateOutUpLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">rotateOutUpRight</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Fade</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <ul class="nav nav-tabs nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#fade-entrance" role="tab">Entrance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#fade-exit" role="tab">Exit</a>
+                                </li>
+                            </ul>
+
+                            <img class="animated" src="demo/img/images/7.jpg" alt="">
+
+                            <div class="tab-content pt-0">
+                                <div class="tab-pane active show fade" id="fade-entrance">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeIn</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInDownBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInLeftBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInRightBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInUp</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeInUpBig</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="fade-exit">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOut</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutDownBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutLeftBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutRightBig</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutUp</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">fadeOutUpBig</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Zoom</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <ul class="nav nav-tabs nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#zoom-entrance" role="tab">Entrance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#zoom-exit" role="tab">Exit</a>
+                                </li>
+                            </ul>
+
+                            <img class="animated" src="demo/img/images/8.jpg" alt="">
+
+                            <div class="tab-content pt-0">
+                                <div class="tab-pane active show fade" id="zoom-entrance">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomIn</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomInDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomInLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomInRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomInUp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="zoom-exit">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomOut</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomOutDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomOutLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomOutRight</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">zoomOutUp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animation-demo">
+                        <div class="card-body">
+                            <h4 class="card-title">Slide</h4>
+                            <h6 class="card-subtitle">Click on the buttons below to start the animation</h6>
+
+                            <ul class="nav nav-tabs nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#slide-entrance" role="tab">Entrance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#slide-exit" role="tab">Exit</a>
+                                </li>
+                            </ul>
+
+                            <img class="animated" src="demo/img/images/9.jpg" alt="">
+
+                            <div class="tab-content pt-0">
+                                <div class="tab-pane active show fade" id="slide-entrance">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideInUp</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideInDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideInLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideInRight</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="slide-exit">
+                                    <div class="row form-row mt-3">
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideOutUp</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideOutDown</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideOutLeft</button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <button class="btn btn-block btn-theme">slideOutRight</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+
+        <!-- Demo only -->
+        <script src="demo/js/demo.js"></script>
+    </body>
+</html>

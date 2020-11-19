@@ -1,0 +1,212 @@
+<aside class="sidebar navigation">
+    <div class="scrollbar">
+        <ul class="navigation__menu">
+            <li>
+                <a class="text-active-blue @@if(context.link === "home"){active}" href="index.html"><i class="zwicon-home text-blue"></i>Dashboard</a>
+            </li>
+            <li>
+                <a href="typography.html" class="text-active-red @@if(context.link === "typography"){active}"><i class="zwicon-edit-square-feather text-red"></i>Typography</a>
+            </li>
+            <li>
+                <a href="widgets.html" class="text-active-green @@if(context.link === "widgets"){active}"><i class="zwicon-layout-4 text-green"></i>Widgets</a>
+            </li>
+            <li class="navigation__sub">
+                <a href="" data-mae-action="submenu-toggle" class="text-active-amber @@if(context.group === "tables"){active}"><i class="zwicon-layout-2 text-amber"></i>Tables</a>
+
+                <ul>
+                    <li>
+                        <a @@if(context.link === "table"){class="text-active-amber active"} href="tables.html">Normal Tables</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "data-table"){class="text-active-amber active"} href="data-tables.html">Data Tables</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__sub">
+                <a @@if(context.group === "forms"){class="text-active-purple active"} href=""><i class="zwicon-note text-purple"></i>Forms</a>
+                <ul>
+                    <li>
+                        <a @@if(context.link === "form-elements"){class="text-active-purple active"} href="form-elements.html">Basic Form Elements</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "form-components"){class="text-active-purple active"} href="form-components.html">Form Components</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "form-layouts"){class="text-active-purple active"} href="form-layouts.html">Form Layouts</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "form-validation"){class="text-active-purple active"} href="form-validation.html">Form Validation</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__sub">
+                <a @@if(context.group === "ui"){class="text-active-cyan active"} href=""><i class="zwicon-cursor-square text-cyan"></i>User Interface</a>
+
+                <ul>
+                    <li>
+                        <a @@if(context.link === "colors"){class="text-active-cyan active"} href="colors.html">Colors</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "animations"){class="text-active-cyan active"} href="animations.html">CSS Animations</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "buttons"){class="text-active-cyan active"} href="buttons.html">Buttons</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "icons"){class="text-active-cyan active"} href="icons.html">Icons</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "listview"){class="text-active-cyan active"} href="listview.html">List View</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "toolbars"){class="text-active-cyan active"} href="toolbars.html">Toolbars</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "cards"){class="text-active-cyan active"} href="cards.html">Cards</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "alerts"){class="text-active-cyan active"} href="alerts.html">Alerts</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "badges"){class="text-active-cyan active"} href="badges.html">Badges</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "breadcrumbs"){class="text-active-cyan active"} href="breadcrumbs.html">Bredcrumbs</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "jumbotron"){class="text-active-cyan active"} href="jumbotron.html">Jumbotron</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "navs"){class="text-active-cyan active"} href="navs.html">Navs</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "pagination"){class="text-active-cyan active"} href="pagination.html">Pagination</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "progress"){class="text-active-cyan active"} href="progress.html">Progress</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__sub">
+                <a @@if(context.group === "components"){class="text-active-pink active"} href=""><i class="zwicon-tray-stack text-pink"></i>Javascript Components</a>
+
+                <ul>
+                    <li>
+                        <a @@if(context.link === "carousel"){class="text-active-pink active"} href="carousel.html">Carousel</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "collapse"){class="text-active-pink active"} href="collapse.html">Collapse</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "dropdown"){class="text-active-pink active"} href="dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "modals"){class="text-active-pink active"} href="modals.html">Modals</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "popover"){class="text-active-pink active"} href="popover.html">Popover</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "tabs"){class="text-active-pink active"} href="tabs.html">Tabs</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "tooltips"){class="text-active-pink active"} href="tooltips.html">Tooltips</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "toast"){class="text-active-pink active"} href="toast.html">Toasts</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "treeview"){class="text-active-pink active"} href="treeview.html">Tree View</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "custom-alerts"){class="text-active-pink active"} href="custom-alerts.html">Custom Alerts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__sub">
+                <a href="" @@if(context.group === "charts"){class="text-active-lime active"}><i class="zwicon-line-chart text-lime"></i>Charts and Maps</a>
+
+                <ul>
+                    <li>
+                        <a @@if(context.link === "flot"){class="text-active-lime active"} href="flot-charts.html">Flot</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "other-charts"){class="text-active-lime active"} href="other-charts.html">Other Charts</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "maps"){class="text-active-lime active"} href="maps.html">Maps</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a @@if(context.link === "photo-gallery"){class="text-active-blue active"} href="photo-gallery.html"><i class="zwicon-image text-blue"></i> Photo Gallery</a>
+            </li>
+            <li>
+                <a @@if(context.link === "calendar"){class="text-active-green active"} href="calendar.html"><i class="zwicon-calendar-never text-green"></i>Calendar</a>
+            </li>
+            <li class="navigation__sub">
+                <a @@if(context.group === "pages"){class="text-active-orange active"} href=""><i class="zwicon-repository text-orange"></i> Sample Pages</a>
+
+                <ul>
+                    <li>
+                        <a @@if(context.link === "profile"){ class="text-active-orange active"} href="profile-about.html">Profile</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "contacts"){ class="text-active-orange active"} href="contacts.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "new-contact"){ class="text-active-orange active"} href="new-contact.html">New Contact</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "groups"){ class="text-active-orange active"} href="groups.html">Groups</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "pricing-tables"){ class="text-active-orange active"} href="pricing-tables.html">Pricing Tables</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "invoice"){ class="text-active-orange active"} href="invoice.html">Invoice</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "todo"){ class="text-active-orange active"} href="todo-lists.html">Todo Lists</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "notes"){ class="text-active-orange active"} href="notes.html">Notes</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "search-results"){ class="text-active-orange active"} href="search-results.html">Search Results</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "issue-tracker"){ class="text-active-orange active"} href="issue-tracker.html">Issue Tracker</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "faq"){ class="text-active-orange active"} href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "team"){ class="text-active-orange active"} href="team.html">Team</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "blog"){ class="text-active-orange active"} href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "blog-detail"){ class="text-active-orange active"} href="blog-detail.html">Blog Detail</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "qa"){ class="text-active-orange active"} href="questions-answers.html">Questions & Answers</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login & SignUp</a>
+                    </li>
+                    <li>
+                        <a href="lockscreen.html">Lockscreen</a>
+                    </li>
+                    <li>
+                        <a href="404.html">404</a>
+                    </li>
+                    <li>
+                        <a @@if(context.link === "empty"){ class="text-active-orange active"} href="empty.html">Empty Page</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>

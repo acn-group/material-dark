@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "qa"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Questions and Answers</h1>
+                </header>
+
+                <div class="card">
+                    <div class="toolbar toolbar--alt toolbar--inner">
+                        <div class="toolbar__nav">
+                            <a class="active" href="">Opened 25</a>
+                            <a href="" class="d-none d-md-inline-block">Responded 30</a>
+                            <a href="">Closed 19</a>
+                        </div>
+
+                        <div class="actions">
+                            <i class="actions__item zwicon-search toolbar__search-open" data-toggle="tooltip" data-title="Search"></i>
+
+                            <div class="dropdown actions__item d-none d-md-flex" data-toggle="tooltip" data-title="Tag">
+                                <i class="zwicon-price-tag" data-toggle="dropdown"></i>
+
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+                                    <a class="dropdown-item" href="">All</a>
+                                    <a class="dropdown-item" href="">Tag One</a>
+                                    <a class="dropdown-item" href="">Tag Two</a>
+                                    <a class="dropdown-item" href="">Tag Three</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown actions__item d-none d-md-flex" data-toggle="tooltip" data-title="Project">
+                                <i class="zwicon-notebook" data-toggle="dropdown"></i>
+
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+                                    <a class="dropdown-item" href="">All Projects</a>
+                                    <a class="dropdown-item" href="">Project One</a>
+                                    <a class="dropdown-item" href="">Project Two</a>
+                                    <a class="dropdown-item" href="">Project Three</a>
+                                    <a class="dropdown-item" href="">Project Four</a>
+                                    <a class="dropdown-item" href="">Project Five</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown actions__item d-none d-md-flex" data-toggle="tooltip" data-title="Assignee">
+                                <i class="zwicon-user-circle" data-toggle="dropdown"></i>
+
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+                                    <a class="dropdown-item" href="">Everyone</a>
+                                    <a class="dropdown-item" href="">David Wilson</a>
+                                    <a class="dropdown-item" href="">James Frank</a>
+                                    <a class="dropdown-item" href="">Natalie Sheth</a>
+                                    <a class="dropdown-item" href="">Christian Robu</a>
+                                    <a class="dropdown-item" href="">Wins Williamson</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown actions__item d-none d-md-flex" data-toggle="tooltip" data-title="Sort by">
+                                <i class="zwicon-filter-alt" data-toggle="dropdown"></i>
+
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu--active">
+                                    <a class="dropdown-item" href="">Newest</a>
+                                    <a class="dropdown-item" href="">Oldest</a>
+                                    <a class="dropdown-item" href="">Most Commented</a>
+                                    <a class="dropdown-item" href="">Least Commented</a>
+                                    <a class="dropdown-item" href="">Recently Updated</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toolbar__search">
+                            <input type="text" placeholder="Search for questions and answers...">
+                            <i class="toolbar__search__close zwicon-arrow-left toolbar__search-close"></i>
+                        </div>
+                    </div>
+
+                    <div class="listview listview--bordered q-a">
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>22</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>02</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>35</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Dulla vel metus scelerisque ante sollicitudin commodo purus odio Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</a></h4>
+                                <p>Asked by David James 2 hours ago</p>
+                                <div class="listview__attrs">
+                                    <span>Bibendum</span>
+                                    <span>Parturient</span>
+                                    <span>Vehicula Ornare</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>05</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>00</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>140</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida blandit vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mususpendisse volutpat dolor massa</a></h4>
+                                <p>Asked by Yen Williams 5 hours ago</p>
+                                <div class="listview__attrs">
+                                    <span>Aliquam</span>
+                                    <span>Aene</span>
+                                    <span>Consecteture</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>541</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>24</strong>
+                                    <small>Answers</small>
+                                    </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>1324</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Donec lorem augue, pharetra id ipsum necrci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc et gravida orci, eget imperdiet nulla.</a></h4>
+                                <p>Asked by Robert Williams 7 hours ago</p>
+                                <div class="listview__attrs">
+                                    <span>Praesent</span>
+                                    <span>Sollicitudin</span>
+                                    <span>Libero</span>
+                                    <span>Nec</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>00</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>00</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>10</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Etiam vulputate elit sit amet mi imperdiet viverra.</a></h4>
+                                <p>Asked by Yen Williams 1 Day ago</p>
+                                <div class="listview__attrs">
+                                    <span>Eget</span>
+                                    <span>Vestibulum</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>2672</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>143</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>5098</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Aliquam facilisis eget sapien id fermentum donec vitae accumsan quam</a></h4>
+                                <p>Asked by Sean Paul 2 Days ago</p>
+                                <div class="listview__attrs">
+                                    <span>Cras</span>
+                                    <span>Imperdiet</span>
+                                    <span>Proin</span>
+                                    <span>Praesent</span>
+                                    <span>Lorem</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>342</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>12</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>2674</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Mauris interdum felis sem, ac ultrices augue maximus sit amet. In non aliquam nulla. Nunc sodales id elit non ullamcorper. Nulla facilisi. Praesent quis quam eget urna feugiat viverra. In malesuada sodales justo nec laoreet</a></h4>
+                                <p>Asked by Teena James 5 days ago</p>
+                                <div class="listview__attrs">
+                                    <span>Lorem</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>412</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>10</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>8962</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Nulla id viverra lacus. Proin ornare ante sapien, quis finibus sem ornare vel. Fusce in laoreet ante. Donec gravida eros vel interdum commodo</a></h4>
+                                <p>Asked by Natalie Seth 7 days ago</p>
+                                <div class="listview__attrs">
+                                    <span>Imperdiet</span>
+                                    <span>Aliquam</span>
+                                    <span>Praesent</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>531</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>28</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>10923</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Mauris interdum felis sem, ac ultrices augue maximus sit amet</a></h4>
+                                <p>Asked by Lendl Simmons 10 days ago</p>
+                                <div class="listview__attrs">
+                                    <span>Nulla</span>
+                                    <span>Ullamcorper</span>
+                                    <span>Consectetur</span>
+                                    <span>Adipiscing</span>
+                                    <span>Quisque</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>02</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>01</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>1921</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Phasellus dignissim lorem non nunc consectetur, vitae efficitur quam vehicula. Aliquam a commodo quam. Nunc purus orci, ornare ac magna ac, semper luctus sapien</a></h4>
+                                <p>Asked by Andy Mitchell a Month ago</p>
+                                <div class="listview__attrs">
+                                    <span>Fusce</span>
+                                    <span>Morbiroin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item q-a__item">
+                            <div class="q-a__stat d-none d-md-block">
+                                <span>
+                                    <strong>1541</strong>
+                                    <small>Votes</small>
+                                </span>
+
+                                <span>
+                                    <strong>32</strong>
+                                    <small>Answers</small>
+                                </span>
+
+                                <span class="d-none d-lg-inline-block">
+                                    <strong>10452</strong>
+                                    <small>Views</small>
+                                </span>
+                            </div>
+                            <div class="listview__content">
+                                <h4><a href="questions-answers-details.html">Integer pretium quam et nisi finibus, ut interdum mi posuere. Maecenas eget fermentum lorem. Maecenas vitae ex ligula</a></h4>
+                                <p>Asked by Diesel Dames a month ago</p>
+                                <div class="listview__attrs">
+                                    <span>Ipsum</span>
+                                    <span>Interdum</span>
+                                    <span>Amet</span>
+                                    <span>Donec</span>
+                                    <span>Pellentesque</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item pagination-prev"><a class="page-link" href="#"><i class="zwicon-arrow-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item pagination-next"><a class="page-link" href="#"><i class="zwicon-arrow-right"></i></a></li>
+                    </ul>
+                </nav>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

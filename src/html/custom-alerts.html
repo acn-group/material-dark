@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+        <link rel="stylesheet" href="resources/vendors/sweetalert2/sweetalert2.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "components",
+                "link": "custom-alerts"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Custom Alerts <small>SweetAlert 2 is beautiful replacement for javascript alert.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic examples</h4>
+                        <h6 class="card-subtitle">SweetAlert2 automatically centers itself on the page and looks great no matter if you're using a desktop computer, mobile or tablet. It's even highly customizeable, as you can see below!</h6>
+
+                        <div class="btn-demo">
+                            <button class="btn btn-theme" id="sa-basic">Basic message</button>
+
+                            <button class="btn btn-theme" id="sa-basic-title">Message with title</button>
+
+                            <button class="btn btn-theme" id="sa-basic-footer">Message with title and footer</button>
+
+                            <button class="btn btn-theme" id="sa-basic-content">Extra long content</button>
+
+                            <button class="btn btn-theme" id="sa-basic-html">HTML contents</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Popup Types</h4>
+                        <h6 class="card-subtitle">There are 5 popup types available: <code>success</code>, <code>error</code>, <code>warning</code>, <code>info</code> and <code>question</code>.</h6>
+
+                        <div class="btn-demo">
+                            <button class="btn btn-theme btn-sa-types" data-type="Success">Success</button>
+
+                            <button class="btn btn-theme btn-sa-types" data-type="Error">Error</button>
+
+                            <button class="btn btn-theme btn-sa-types" data-type="Warning">Warning</button>
+
+                            <button class="btn btn-theme btn-sa-types" data-type="Info">Info</button>
+
+                            <button class="btn btn-theme btn-sa-types" data-type="Question">Question</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Position</h4>
+                        <h6 class="card-subtitle">Custom positioned Sweetalert2 dialogs</h6>
+
+                        <div class="btn-demo">
+                            <button class="btn btn-theme btn-sa-position" data-position="top">Top</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="top-start">Top start</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="top-end">Top end</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="center">Center</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="center-start">Center start</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="center-end">Center end</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="bottom">Bottom</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="bottom-start">Bottom start</button>
+
+                            <button class="btn btn-theme btn-sa-position" data-position="bottom-end">Bottom end</button>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+        <script src="resources/vendors/sweetalert2/sweetalert2.all.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

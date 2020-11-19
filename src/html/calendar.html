@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+        <link rel="stylesheet" href="resources/vendors/fullcalendar/core/main.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "link": "calendar"
+            })
+
+            <section class="content">
+                <div class="content__inner">
+                    <header class="content__title content__title--calendar">
+                        <h1><span id="calendar-title">Calendar</span> <small>FullCalendar is a highly customizable open source javaScript event calendar.</small></h1>
+
+                        <div class="actions">
+                            <a href="" class="actions__item" data-calendar-view="prev"><i class="zwicon-arrow-left"></i></a>
+                            <a href="" class="actions__item" data-calendar-view="today"><i class="zwicon-refresh-left"></i></a>
+                            <a href="" class="actions__item" data-calendar-view="next"><i class="zwicon-arrow-right"></i></a>
+                        </div>
+                    </header>
+
+                    <div id="calendar" class="calendar card"></div>
+
+                    <!-- Add new event -->
+                    <div class="modal fade" id="event-new" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">New Event</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group form-group--light">
+                                        <input type="text" class="form-control event-new__title" placeholder="Event Title">
+                                    </div>
+
+                                    <div class="form-group mb-0 text-center event-new__color">
+                                        <div class="btn-group btn-group-toggle btn-group--colors" data-toggle="buttons">
+                                            <label class="btn bg-gradient-blue active"><input type="radio" value="bg-gradient-blue" name="event-color"></label>
+                                            <label class="btn bg-gradient-red"><input type="radio" value="bg-gradient-red" name="event-color"></label>
+                                            <label class="btn bg-gradient-green"><input type="radio" value="bg-gradient-green" name="event-color"></label>
+                                            <label class="btn bg-gradient-orange"><input type="radio" value="bg-gradient-orange" name="event-color"></label>
+                                            <label class="btn bg-gradient-purple"><input type="radio" value="bg-gradient-purple" name="event-color"></label>
+                                            <label class="btn bg-gradient-brown"><input type="radio" value="bg-gradient-brown" name="event-color"></label>
+                                            <label class="btn bg-gradient-indigo"><input type="radio" value="bg-gradient-indigo" name="event-color"></label>
+                                            <label class="btn bg-gradient-blue-grey"><input type="radio" value="bg-gradient-blue-grey" name="event-color"></label>
+                                            <label class="btn bg-gradient-pink"><input type="radio" value="bg-gradient-pink" name="event-color"></label>
+                                            <label class="btn bg-gradient-lime"><input type="radio" value="bg-gradient-lime" name="event-color"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer modal-footer--alt">
+                                    <button type="submit" class="btn btn-link event-new__add">Add Event</button>
+                                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edit event -->
+                    <div class="modal fade" id="event-edit" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Edit Event</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="edit-event__form">
+                                        <div class="form-group form-group--light">
+                                            <input type="text" class="form-control event-edit__title" placeholder="Event Title">
+                                        </div>
+
+                                        <div class="form-group mb-0 text-center event-edit__color">
+                                            <div class="btn-group btn-group-toggle btn-group--colors" data-toggle="buttons">
+                                                <label class="btn bg-gradient-blue active"><input type="radio" value="bg-gradient-blue" name="event-color"></label>
+                                                <label class="btn bg-gradient-red"><input type="radio" value="bg-gradient-red" name="event-color"></label>
+                                                <label class="btn bg-gradient-green"><input type="radio" value="bg-gradient-green" name="event-color"></label>
+                                                <label class="btn bg-gradient-orange"><input type="radio" value="bg-gradient-orange" name="event-color"></label>
+                                                <label class="btn bg-gradient-purple"><input type="radio" value="bg-gradient-purple" name="event-color"></label>
+                                                <label class="btn bg-gradient-brown"><input type="radio" value="bg-gradient-brown" name="event-color"></label>
+                                                <label class="btn bg-gradient-indigo"><input type="radio" value="bg-gradient-indigo" name="event-color"></label>
+                                                <label class="btn bg-gradient-blue-grey"><input type="radio" value="bg-gradient-blue-grey" name="event-color"></label>
+                                                <label class="btn bg-gradient-pink"><input type="radio" value="bg-gradient-pink" name="event-color"></label>
+                                                <label class="btn bg-gradient-lime"><input type="radio" value="bg-gradient-lime" name="event-color"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer modal-footer--alt">
+                                    <button class="btn btn-link text-orange event-edit__delete">Delete</button>
+                                    <button class="btn btn-link event-edit__update">Update</button>
+                                    <button class="btn btn-link" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @@include('_includes/_footer.html')
+                </div>
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <script src="resources/vendors/autosize/autosize.min.js"></script>
+        <script src="resources/vendors/fullcalendar/core/main.min.js"></script>
+        <script src="resources/vendors/fullcalendar/daygrid/main.min.js"></script>
+        <script src="resources/vendors/fullcalendar/interaction/main.min.js"></script>
+
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

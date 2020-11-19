@@ -1,0 +1,100 @@
+<header class="header">
+    <div class="header__main">
+        <i class="navigation-toggle zwicon-hamburger-menu d-xl-none"></i>
+
+        <div class="logo d-none d-md-block">
+            <a href="index.html">
+                Material
+                <small>admin extended dark</small>
+            </a>
+        </div>
+
+        <form class="search">
+            <input type="text" class="search__input" placeholder="Search for people, files & reports">
+            <i class="zwicon-search search__helper"></i>
+            <i class="zwicon-arrow-left search__reset"></i>
+        </form>
+
+        <ul class="top-nav">
+            <li class="d-xl-none">
+                <a class="top-nav__search" href=""><i class="zwicon-search"></i></a>
+            </li>
+
+            <li class="d-xl-none">
+                <a data-notification="#notifications-messages" href=""><i class="zwicon-mail"></i></a>
+            </li>
+
+            <li class="d-xl-none">
+                <a data-notification="#notifications-alerts" href=""><i class="zwicon-bell"></i></a>
+            </li>
+
+            <li class="d-none d-sm-block d-xl-none">
+                <a data-notification="#notifications-tasks" href=""><i class="zwicon-task"></i></a>
+            </li>
+
+            <li class="dropdown d-none d-sm-block">
+                <a data-toggle="dropdown" href="">
+                    <i class="zwicon-grid"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right top-nav__apps">
+                    <a href="">
+                        <i class="zwicon-calendar bg-gradient-lime"></i>
+                        <small class="text-lime">Calendar</small>
+                    </a>
+                    <a href="">
+                        <i class="zwicon-folder-open bg-gradient-red"></i>
+                        <small class="text-red">Files</small>
+                    </a>
+                    <a href="">
+                        <i class="zwicon-mail bg-gradient-amber"></i>
+                        <small class="text-amber">Mail</small>
+                    </a>
+                    <a href="">
+                        <i class="zwicon-line-chart bg-gradient-blue"></i>
+                        <small class="text-blue">Analytics</small>
+                    </a>
+                    <a href="">
+                        <i class="zwicon-broadcast bg-gradient-purple"></i>
+                        <small class="text-purple">News</small>
+                    </a>
+                    <a href="">
+                        <i class="zwicon-image bg-gradient-orange"></i>
+                        <small class="text-orange">Gallery</small>
+                    </a>
+                </div>
+            </li>
+
+            <li class="dropdown d-none d-sm-block">
+                <a data-toggle="dropdown" href=""><i class="zwicon-cog"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">Preferences</div>
+                    <a class="dropdown-item" data-mae-action="fullscreen" href=""><i class="zwicon-expand-wide"></i> Toggle Fullscreen</a>
+                    <a class="dropdown-item" data-mae-action="clear-localstorage" href=""><i class="zwicon-trash"></i> Clear Local Storage</a>
+                    <a class="dropdown-item" href=""><i class="zwicon-smile"></i> Privacy Settings</a>
+                    <a class="dropdown-item" href=""><i class="zwicon-cog"></i> Other Settings</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="user dropdown">
+            <a data-toggle="dropdown" class="d-block" href="">
+                <img class="user__img" src="demo/img/contacts/5.jpg" alt="">
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">Hello Malinda Hollaway!</div>
+                <a class="dropdown-item" href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                <a class="dropdown-item" href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                <a class="dropdown-item" href=""><i class="zmdi zmdi-settings"></i> Settings</a>
+                <a class="dropdown-item" href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toggles d-none d-xl-block">
+        <a href="" data-notification="#notifications-messages" class="toggles__notify"><i class="zwicon-mail"></i></a>
+        <a href="" data-notification="#notifications-alerts"><i class="zwicon-bell"></i></a>
+        <a href="" data-notification="#notifications-tasks"><i class="zwicon-task"></i></a>
+    </div>
+
+</header>

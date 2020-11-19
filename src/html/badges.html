@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "badges"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Badges <small>Small and adaptive tag for adding context to just about any content.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Contextual variations</h4>
+                        <h6 class="card-subtitle">Add any of the below mentioned modifier classes to change the appearance of a badge.</h6>
+
+                        <div class="badge-demo">
+                            <span class="badge badge-primary">Primary</span>
+                            <span class="badge badge-success">Success</span>
+                            <span class="badge badge-danger">Danger</span>
+                            <span class="badge badge-warning">Warning</span>
+                            <span class="badge badge-info">Info</span>
+                            <span class="badge badge-light">Light</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Pill badges</h4>
+                        <h6 class="card-subtitle">Use the <code>.badge-pill</code> modifier class to make badges more rounded. Useful if you miss the badges from v3.</h6>
+
+                        <div class="badge-demo">
+                            <span class="badge badge-pill badge-primary">Primary</span>
+                            <span class="badge badge-pill badge-success">Success</span>
+                            <span class="badge badge-pill badge-danger">Danger</span>
+                            <span class="badge badge-pill badge-warning">Warning</span>
+                            <span class="badge badge-pill badge-info">Info</span>
+                            <span class="badge badge-pill badge-light">Light</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Links</h4>
+                        <h6 class="card-subtitle">Using the <code>.badge</code> classes with the <code>&#x3C;a&#x3E;</code> element quickly provide actionable badges with hover and focus states.</h6>
+
+                        <div class="badge-demo">
+                            <a href="#" class="badge badge-primary">Primary</a>
+                            <a href="#" class="badge badge-success">Success</a>
+                            <a href="#" class="badge badge-danger">Danger</a>
+                            <a href="#" class="badge badge-warning">Warning</a>
+                            <a href="#" class="badge badge-info">Info</a>
+                            <a href="#" class="badge badge-light">Light</a>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

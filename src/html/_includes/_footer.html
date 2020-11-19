@@ -1,0 +1,11 @@
+<footer class="footer">
+    Copyright &copy; 2019 Material Admin
+
+    <nav class="footer__menu">
+        <a href="">Home</a>
+        <a href="">Dashboard</a>
+        <a href="">Reports</a>
+        <a href="">Support</a>
+        <a href="">Contact</a>
+    </nav>
+</footer>

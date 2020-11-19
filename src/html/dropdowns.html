@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "components",
+                "link": "dropdown"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Dropdowns <small>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included dropdown directives.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Single button dropdowns</h4>
+                        <h6 class="card-subtitle">Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&#x3C;button&#x3E;</code>elements.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Toggle Dropdown</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme dropdown-toggle" data-toggle="dropdown">Toggle Icon Dropdown </button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item"><i class="zwicon-home"></i> Goto Home Page</a>
+                                    <a href="" class="dropdown-item"><i class="zwicon-search"></i> Search History</a>
+                                    <a href="" class="dropdown-item"><i class="zwicon-comment"></i> Message Andy</a>
+                                    <a href="" class="dropdown-item"><i class="zwicon-lock"></i> Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Split button dropdowns</h4>
+                        <h6 class="card-subtitle">Create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="btn-group">
+                                <button id="split-button" type="button" class="btn btn-theme">Toggle split button dropdown</button>
+                                <button type="button" class="btn btn-theme dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Trigger by non-button elements</h4>
+                        <h6 class="card-subtitle">Dropdown can also be used with <code>&#x3C;a&#x3E;</code>, <code>&#x3C;span&#x3E;</code> or any other tags.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <a data-toggle="dropdown">I'm an &#x3C;a&#x3E; tag!</a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <span data-toggle="dropdown">I'm an &#x3C;span&#x3E; tag!</span>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <i data-toggle="dropdown" class="zwicon-arrow-square-down"></i>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Disabled</h4>
+                        <h6 class="card-subtitle">Use <code>disabled</code> attribute on <code>data-toggle="dropdown"</code> to disable the toggle.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown" disabled>Disabled Dropdown</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme-dark" data-toggle="dropdown" disabled>Disabled Dropdown</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Disabled menu item</h4>
+                        <h6 class="card-subtitle">Add <code>.disabled</code> to items in the dropdown to style them as disabled.</h6>
+
+                        <div class="dropdown">
+                            <button class="btn btn-theme" data-toggle="dropdown">Toggle Dropdown</button>
+                            <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">Action</a>
+                                <a href="" class="dropdown-item disabled">Another Action</a>
+                                <a href="" class="dropdown-item">Something else here</a>
+                                <a href="" class="dropdown-item">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Menu alignment</h4>
+                        <h6 class="card-subtitle">By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add class <code>.dropdown-menu-right</code> to a <code>dropdownMenu</code> to right align the dropdown menu.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Default (Left)</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Right aligned</button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Directions</h4>
+                        <h6 class="card-subtitle">Dropdown menu can be triggered in any of the four directions by using dropdown helper classes.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropup">
+                                <button class="btn btn-theme dropdown-toggle" data-toggle="dropdown">Dropup </button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-demo">
+                            <div class="dropright">
+                                <button class="btn btn-theme dropdown-toggle" data-toggle="dropdown">Dropright </button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-demo">
+                            <div class="dropleft">
+                                <button class="btn btn-theme dropdown-toggle" data-toggle="dropdown"> Dropleft</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something else here</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Menu contents</h4>
+                        <h6 class="card-subtitle">In addition to the links, dropdown menu can also have other contents such as text, dividers, forms etc.</h6>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Header</button>
+                                <div class="dropdown-menu">
+                                    <h6 class="dropdown-header">Dropdown header</h6>
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something tooo long here!</a>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Divider</button>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Action</a>
+                                    <a href="" class="dropdown-item">Another Action</a>
+                                    <a href="" class="dropdown-item">Something tooo long here!</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="dropdown-item">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-demo">
+                            <div class="dropdown">
+                                <button class="btn btn-theme" data-toggle="dropdown">Text</button>
+                                <div class="dropdown-menu p-4 text-invert" style="width: 200px;">
+                                    Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

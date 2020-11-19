@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+        <link rel="stylesheet" href="resources/vendors/jqvmap/jqvmap.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "charts",
+                "link": "maps"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Maps <small>JQVMap is a plugin that renders Interactive, Clickable Vector Maps. It uses resizable Scalable Vector Graphics (SVG) for modern browsers.</small></h1>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">World</h4>
+                                <h6 class="card-subtitle">Map: <code>world_en</code></h6>
+
+                                <div class="jqvmap" data-map="world_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Asia</h4>
+                                <h6 class="card-subtitle">Map: <code>asia_en</code></h6>
+
+                                <div class="jqvmap" data-map="asia_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Africa</h4>
+                                <h6 class="card-subtitle">Map: <code>africa_en</code></h6>
+
+                                <div class="jqvmap" data-map="africa_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Europe</h4>
+                                <h6 class="card-subtitle">Map: <code>europe_en</code></h6>
+
+                                <div class="jqvmap" data-map="europe_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Australia</h4>
+                                <h6 class="card-subtitle">Map: <code>australia_en</code></h6>
+
+                                <div class="jqvmap" data-map="australia_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">North America</h4>
+                                <h6 class="card-subtitle">Map: <code>north-america_en</code></h6>
+
+                                <div class="jqvmap" data-map="north-america_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">South America</h4>
+                                <h6 class="card-subtitle">Map: <code>south-america_en</code></h6>
+
+                                <div class="jqvmap" data-map="south-america_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">USA</h4>
+                                <h6 class="card-subtitle">Map: <code>usa_en</code></h6>
+
+                                <div class="jqvmap" data-map="usa_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Canada</h4>
+                                <h6 class="card-subtitle">Map: <code>canada_en</code></h6>
+
+                                <div class="jqvmap" data-map="canada_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Russia</h4>
+                                <h6 class="card-subtitle">Map: <code>russia_en</code></h6>
+
+                                <div class="jqvmap" data-map="russia_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Germany</h4>
+                                <h6 class="card-subtitle">Map: <code>germany_en</code></h6>
+
+                                <div class="jqvmap" data-map="germany_en"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">France</h4>
+                                <h6 class="card-subtitle">Map: <code>france_fr</code></h6>
+
+                                <div class="jqvmap" data-map="france_fr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <script src="resources/vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.canada.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.europe.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.france.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.germany.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.russia.js"></script>
+        <script src="resources/vendors/jqvmap/maps/jquery.vmap.usa.js"></script>
+        <script src="resources/vendors/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
+        <script src="resources/vendors/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
+        <script src="resources/vendors/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
+        <script src="resources/vendors/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
+        <script src="resources/vendors/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

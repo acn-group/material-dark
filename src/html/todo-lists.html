@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+        <link rel="stylesheet" href="resources/vendors/select2/css/select2.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "todo"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Todo Lists <small>Donec idelit nonmi porta gravida at eget metus</small></h1>
+                </header>
+
+                <div class="row todo">
+                    <div class="col-md-8">
+                        <div class="card mb-0">
+                            <div class="toolbar toolbar--inner toolbar--alt mb-3">
+                                <div class="toolbar__label">29 Total todo lists</div>
+
+                                <div class="actions">
+                                    <i class="actions__item zwicon-search" data-sa-action="toolbar-search-open"></i>
+                                    <div class="dropdown actions__item">
+                                        <i class="zwicon-filter-alt" data-toggle="dropdown"></i>
+
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="" class="dropdown-item">Newest to Oldest</a>
+                                            <a href="" class="dropdown-item">Oldest to Newest</a>
+                                            <a href="" class="dropdown-item">Completed first</a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="actions__item zwicon-info-circle"></a>
+                                    <a href="" class="actions__item zwicon-cog"></a>
+                                </div>
+
+                                <div class="toolbar__search">
+                                    <input type="text" placeholder="Search...">
+
+                                    <i class="toolbar__search__close zwicon-arrow-left" data-sa-action="toolbar-search-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="listview listview--bordered">
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-1">
+                                        <label class="bg-gradient-purple" for="todo-1">F</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Fivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</div>
+                                            <p>Today at 8.30 AM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Messages</span>
+                                                <span>!!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-2">
+                                        <label class="bg-gradient-green" for="todo-2">N</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Nullam id dolor id nibh ultricies vehicula ut id elit</div>
+                                            <p>Today at 12.30 PM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Clients</span>
+                                                <span>!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-3">
+                                        <label class="bg-gradient-blue" for="todo-3">C</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Cras mattis consectetur purus sit amet fermentum</div>
+                                            <p>Tomorrow at 10.30 AM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Clients</span>
+                                                <span>!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-4">
+                                        <label class="bg-gradient-pink" for="todo-4">M</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</div>
+                                            <p>Tomorrow at 05.10 PM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Marketing</span>
+                                                <span>!!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-5">
+                                        <label class="bg-gradient-brown" for="todo-5">I</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Integer posuere erat a ante venenatis dapibus posuere velit aliquet</div>
+                                            <p>05/08/2017 at 08.00 AM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Server</span>
+                                                <span>!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-6">
+                                        <label class="bg-gradient-orange" for="todo-6">D</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et</div>
+                                            <p>10/08/2016 at 09.20 AM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Server</span>
+                                                <span>!!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-7">
+                                        <label class="bg-gradient-blue-grey" for="todo-7">P</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Praesent commodo cursus magnavel scelerisque nisl consectetur</div>
+                                            <p>10/08/2016 at 04.00 AM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Server</span>
+                                                <span>!!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listview__item">
+                                    <div class="checkbox-char todo__item">
+                                        <input type="checkbox" id="todo-8">
+                                        <label class="bg-gradient-red" for="todo-8">A</label>
+
+                                        <div class="listview__content">
+                                            <div class="listview__heading">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</div>
+                                            <p>15/08/2016 at 10.22 PM</p>
+
+                                            <div class="listview__attrs">
+                                                <span>#Messages</span>
+                                                <span>!!!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions listview__actions">
+                                        <div class="dropdown actions__item">
+                                            <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="">Mark as completed</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-2"></div>
+                            </div>
+                        </div>
+
+                        <a class="view-more" href="todos.html"><i class="zwicon-refresh-double"></i> View More Todo Lists</a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Labels</h4>
+                                <h6 class="card-subtitle">Etiam porta malesuada magna mollis</h6>
+
+                                <div class="tags">
+                                    <a href="">#Messages</a>
+                                    <a href="">#Clients</a>
+                                    <a href="">#Server</a>
+                                    <a href="">#Marketing</a>
+                                    <a href="">#Work related</a>
+                                    <a href="">#Website</a>
+                                    <a href="">#Uncategorized</a>
+                                    <a href="">#Collegues</a>
+                                    <a href="">#Hosting</a>
+                                    <a href="">#Design</a>
+                                    <a href="">#To be addressed</a>
+                                    <a href="">#Others</a>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Add new label">
+
+                                    <a class="input-group-append" href="">
+                                        <span class="input-group-text"><i class="zwicon-plus"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New label modal -->
+                <div class="modal fade" id="modal-new-todo" tabindex="-1">
+                    <div class="modal-dialog modal-sm modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">New Todo List</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group form-group--light">
+                                    <input type="text" class="form-control" placeholder="What do you want to do?">
+                                </div>
+
+                                <div class="form-group form-group--light select2-parent">
+                                    <select class="select2">
+                                        <option>#Messages</option>
+                                        <option>#Clients</option>
+                                        <option>#Server</option>
+                                        <option>#Marketing</option>
+                                        <option>#Work Related</option>
+                                        <option>#Website</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-0">
+                                    <label>Set Priority</label>
+
+                                    <div class="btn-group btn-group-toggle btn-group-justified" data-toggle="buttons">
+                                        <label class="btn btn-theme active">
+                                            <input type="radio" name="options" id="option1" checked> !
+                                        </label>
+                                        <label class="btn btn-theme">
+                                            <input type="radio" name="options" id="option2"> !!
+                                        </label>
+                                        <label class="btn btn-theme">
+                                            <input type="radio" name="options" id="option3"> !!!
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer--alt">
+                                <button type="button" class="btn btn-link">Save</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-light btn--action btn--fixed zwicon-plus" data-toggle="modal" data-target="#modal-new-todo"></button>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+        <script src="resources/vendors/select2/js/select2.full.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "groups"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Groups <small>Nullam id dolor id nibh ultricies vehicula ut id elit</small></h1>
+                </header>
+
+                <div class="row groups">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/1.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/2.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/3.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/4.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Sold Properties</strong>
+                                    <small>106 Contacts</small>
+                                </div>
+                            </a>
+
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <div class="avatar-img avatar-char">A</div>
+                                    <img class="avatar-img" src="demo/img/contacts/7.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/8.jpg" alt="">
+                                    <div class="avatar-img avatar-char">D</div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>San Fransisco</strong>
+                                    <small>12 Contacts</small>
+                                </div>
+                            </a>
+
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/5.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/6.jpg" alt="">
+                                    <div class="avatar-img avatar-char">E</div>
+                                    <img class="avatar-img" src="demo/img/contacts/8.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Pending Leads</strong>
+                                    <small>42 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/5.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/6.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/8.jpg" alt="">
+                                    <div class="avatar-img avatar-char"></div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Management</strong>
+                                    <small>3 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/4.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/9.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/2.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/10.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Colleagues</strong>
+                                    <small>22 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <div class="avatar-img avatar-char">E</div>
+                                    <div class="avatar-img avatar-char">T</div>
+                                    <div class="avatar-img avatar-char">O</div>
+                                    <div class="avatar-img avatar-char">G</div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Los Angeles</strong>
+                                    <small>27 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/11.jpg" alt="">
+                                    <div class="avatar-img avatar-char"></div>
+                                    <div class="avatar-img avatar-char"></div>
+                                    <div class="avatar-img avatar-char"></div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Out Sourcing</strong>
+                                    <small>1 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <div class="avatar-img avatar-char">Z</div>
+                                    <div class="avatar-img avatar-char">R</div>
+                                    <div class="avatar-img avatar-char">N</div>
+                                    <div class="avatar-img avatar-char">B</div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>San Diego</strong>
+                                    <small>243 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/12.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/11.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/10.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/9.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Communication</strong>
+                                    <small>96 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <div class="avatar-img avatar-char"></div>
+                                    <div class="avatar-img avatar-char"></div>
+                                    <div class="avatar-img avatar-char"></div>
+                                    <div class="avatar-img avatar-char"></div>
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Not varified</strong>
+                                    <small>0 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/2.jpg" alt="">
+                                    <img class="avatar-img" src="demo/img/contacts/4.jpg" alt="">
+                                    <div class="avatar-img avatar-char">G</div>
+                                    <img class="avatar-img" src="demo/img/contacts/6.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Email List</strong>
+                                    <small>10 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <div class="groups__item">
+                            <a href="">
+                                <div class="groups__img">
+                                    <img class="avatar-img" src="demo/img/contacts/7.jpg" alt="">
+                                    <div class="avatar-img avatar-char">G</div>
+                                    <div class="avatar-img avatar-char">L</div>
+                                    <img class="avatar-img" src="demo/img/contacts/8.jpg" alt="">
+                                </div>
+
+                                <div class="groups__info">
+                                    <strong>Connected</strong>
+                                    <small>178 Contacts</small>
+                                </div>
+                            </a>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="">Edit</a>
+                                        <a class="dropdown-item" href="" data-demo-action="delete-listing">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

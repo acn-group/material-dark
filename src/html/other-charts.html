@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "charts",
+                "link": "other-charts"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>jQuery Sparklines <small>This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.</small></h1>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Tristate Chart</h4>
+
+                                <div class="sparkline-tristate">1,1,0,1,-1,-1,1,-1,0,0,1,1,-1,0,0,0,0,-1,1,1,1,-1,1-1,1,-1,0,0,1,1,-1,-1,1,-1,0,0,1,1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Discrete Chart</h4>
+
+                                <div class="sparkline-discrete">4,6,7,7,4,3,2,1,4,4,5,7,1,9,5,3,6,3,1,0,8,4,3,5,1,5,7,4,4,4,1,2,4,7,1,9,5,3,6,3,1,0,8,4,3,5,9,9,9,9,9,4,1,1,1,4,2,4,3,7,6,8,9,6,4,6,4,3,6,3,7,2,3,4,6,7,7,4,3,2,1,4,4,5,7,1,9,5,3,6,3,1,0,8,4,3,5,1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Bar Chart</h4>
+
+                                <div class="sparkline-bar">6,9,5,6,3,7,5,4,6,5,6,4,2,5,8,2,6,9,5,7,2,5,2,8,6,7,6,5,3,1,9,3,5,8,2,4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Bullet Chart</h4>
+
+                                <div class="sparkline-bullet">10,12,12,9,7</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Line Chart</h4>
+
+                                <div class="sparkline-line" style="max-width: 300px">9,5,6,3,9,7,5,4,6,5,6,4,9</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Sparkline Pie Chart</h4>
+
+                                <div class="sparkline-pie d-inline-block">1,1,2</div>
+                                <div class="sparkline-pie d-inline-block">1,1,1</div>
+                                <div class="sparkline-pie d-inline-block">1,3,1,1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+                <br>
+
+                <header class="content__title">
+                    <h1>Easy Pie Charts <small>Lightweight jQuery plugin to render and animate nice pie charts with the HTML5 canvas element</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="easy-pie-chart" data-percent="74" data-size="140" data-track-color="#22313a" data-bar-color="#f93964">
+                            <span class="easy-pie-chart__value text-red">74</span>
+                        </div>
+
+                        <div class="easy-pie-chart" data-percent="85" data-size="120" data-track-color="#22313a" data-bar-color="#27a4fb">
+                            <span class="easy-pie-chart__value text-blue">85</span>
+                        </div>
+
+                        <div class="easy-pie-chart" data-percent="50" data-size="100" data-track-color="#22313a" data-bar-color="#2cc56f">
+                            <span class="easy-pie-chart__value text-green">50</span>
+                        </div>
+
+                        <div class="easy-pie-chart" data-percent="22" data-size="80" data-track-color="#22313a" data-bar-color="#ffc021">
+                            <span class="easy-pie-chart__value text-amber">22</span>
+                        </div>
+
+                        <div class="easy-pie-chart" data-percent="64" data-size="60" data-track-color="#22313a" data-bar-color="#ac66f5">
+                            <span class="easy-pie-chart__value text-purple">64</span>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <script src="resources/vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="resources/vendors/sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

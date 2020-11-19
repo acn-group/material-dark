@@ -1,0 +1,74 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Button Checkboxes and Radios</h4>
+        <h6 class="card-subtitle">Control button states or create groups of buttons for more components like toolbars.</h6>
+
+        <h5 class="card-body__title">Toggle states</h5>
+        <p>Add <code>data-toggle="button"</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class and <code>aria-pressed="true"</code> to the &#x3C;button&#x3E;.</p>
+
+        <br>
+
+        <button type="button" class="btn btn-theme" data-toggle="button" aria-pressed="false">
+            Single toggle
+        </button>
+
+        <br>
+        <br>
+        <br>
+
+        <h5 class="card-body__title">Checkbox and radio buttons</h5>
+        <p>Bootstrap’s button styles can be applied to other elements, such as <code>&#x3C;label&#x3E;</code>s, to provide checkbox or radio style button toggling.</p>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-theme active">
+                <input type="checkbox" checked> Checkbox 1 (pre-checked)
+            </label>
+            <label class="btn btn-theme">
+                <input type="checkbox"> Checkbox 2
+            </label>
+            <label class="btn btn-theme">
+                <input type="checkbox"> Checkbox 3
+            </label>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-theme active">
+                <input type="radio" checked> Radio 1 (pre-checked)
+            </label>
+            <label class="btn btn-theme">
+                <input type="radio"> Radio 2
+            </label>
+            <label class="btn btn-theme">
+                <input type="radio"> Radio 3
+            </label>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="btn-group btn-group-toggle btn-group--colors" data-toggle="buttons">
+            <label class="btn"><input type="checkbox" checked></label>
+            <label class="btn bg-blue"><input type="checkbox"></label>
+            <label class="btn bg-red"><input type="checkbox"></label>
+            <label class="btn bg-green"><input type="checkbox"></label>
+            <label class="btn bg-orange active"><input type="checkbox"></label>
+            <label class="btn bg-purple"><input type="checkbox"></label>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="btn-group btn-group-toggle btn-group--colors" data-toggle="buttons">
+            <label class="btn"><input type="radio" name="notes-color" checked></label>
+            <label class="btn bg-blue"><input type="radio" name="notes-color"></label>
+            <label class="btn bg-red active"><input type="radio" name="notes-color"></label>
+            <label class="btn bg-green"><input type="radio" name="notes-color"></label>
+            <label class="btn bg-orange"><input type="radio" name="notes-color"></label>
+            <label class="btn bg-purple"><input type="radio" name="notes-color"></label>
+        </div>
+    </div>
+</div>

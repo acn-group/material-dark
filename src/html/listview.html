@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "listview"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>List view</h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic example</h4>
+                        <h6 class="card-subtitle">Basic listing with text lines</h6>
+                    </div>
+
+                    <div class="listview">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Wel ea elit iuvaret. Mea labitur definitiones ex, id atqui accusata vix, vim nibh mandamus ad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix mb-3"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Checkboxes</h4>
+                        <h6 class="card-subtitle">Basic listing with checkbox and text lines</h6>
+                    </div>
+
+                    <div class="listview">
+                        <div class="listview__item">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" id="lvc-1">
+                                <label class="checkbox__label" for="lvc-1"></label>
+                            </div>
+                            <div class="listview__content">
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" id="lvc-2">
+                                <label class="checkbox__label" for="lvc-2"></label>
+                            </div>
+                            <div class="listview__content">
+                                <p>Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" id="lvc-3">
+                                <label class="checkbox__label" for="lvc-3"></label>
+                            </div>
+                            <div class="listview__content">
+                                <p>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" id="lvc-4">
+                                <label class="checkbox__label" for="lvc-4"></label>
+                            </div>
+                            <div class="listview__content">
+                                <p>Per an error perpetua, fierent fastidii recteque ad pro. Mei id brute intellegam</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__input" id="lvc-5">
+                                <label class="checkbox__label" for="lvc-5"></label>
+                            </div>
+                            <div class="listview__content">
+                                <p>Wel ea elit iuvaret. Mea labitur definitiones ex, id atqui accusata vix, vim nibh mandamus ad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix mb-3"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Headings</h4>
+                        <h6 class="card-subtitle">Heading text can be added by wrapping the content on <code>.listview__heading</code></h6>
+                    </div>
+
+                    <div class="listview">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Attributes</h4>
+                        <h6 class="card-subtitle">You can also display information as attributes.</h6>
+                    </div>
+
+                    <div class="listview">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+
+                                <div class="listview__attrs">
+                                    <span>Date Created: 09/06/1988</span>
+                                    <span>Members: 78954</span>
+                                    <span>Published: No</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+
+                                <div class="listview__attrs">
+                                    <span>Comedy</span>
+                                    <span>Reviewed</span>
+                                    <span>5 Stars</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+
+                                <div class="listview__attrs">
+                                    <span>James Anderson</span>
+                                    <span>Software Developer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+
+                                <div class="listview__attrs">
+                                    <span>1988</span>
+                                    <span>December</span>
+                                    <span>1990</span>
+                                    <span>10:12 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <div>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</div>
+
+                                <div class="listview__attrs">
+                                    <span>Toyota</span>
+                                    <span>Hilux</span>
+                                    <span>Revo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Media</h4>
+                        <h6 class="card-subtitle">Add image or character as a media entry.</h6>
+                    </div>
+
+                    <div class="listview">
+                        <div class="listview__item">
+                            <img src="demo/img/profile-pics/1.jpg" class="avatar-img" alt="">
+
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <i class="avatar-char">A</i>
+
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <i class="avatar-char">C</i>
+
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <img src="demo/img/profile-pics/2.jpg" class="avatar-img" alt="">
+
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <img src="demo/img/profile-pics/3.jpg" class="avatar-img" alt="">
+
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Action links</h4>
+                        <h6 class="card-subtitle">Add actions links using <code>.actions</code></h6>
+                    </div>
+
+                    <div class="listview listview--truncate">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="" class="dropdown-item">Edit</a>
+                                        <a href="" class="dropdown-item">Share</a>
+                                        <a href="" class="dropdown-item">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                            <div class="actions">
+                                <i class="actions__item zwicon-trash"></i>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                            <div class="actions">
+                                <i class="actions__item zwicon-edit-pencil"></i>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                            <div class="actions">
+                                <i class="actions__item zwicon-share"></i>
+                                <i class="actions__item zwicon-trash"></i>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                            <div class="actions">
+                                <div class="dropdown actions__item">
+                                    <i class="zwicon-more-h" data-toggle="dropdown"></i>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="" class="dropdown-item">Edit</a>
+                                        <a href="" class="dropdown-item">Share</a>
+                                        <a href="" class="dropdown-item">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Hoverable list items</h4>
+                        <h6 class="card-subtitle">Use class <code>.listview--hover</code> on <code>.listview</code> to make list items hoverable.</h6>
+                    </div>
+
+                    <div class="listview listview--truncate listview--hover">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Striped rows</h4>
+                        <h6 class="card-subtitle">Use class <code>.listview--striped</code> on <code>.listview</code> to make list items striped.</h6>
+                    </div>
+
+                    <div class="listview listview--truncate listview--striped">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Bordered</h4>
+                        <h6 class="card-subtitle">Use class <code>.listview--bordered</code> on <code>.listview</code> to make list items Bordered.</h6>
+                    </div>
+
+                    <div class="listview listview--truncate listview--bordered">
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Dulla vel metus scelerisque ante sollicitudin commodo purus odio</h4>
+                                <p>Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Finibus consectetur mauris, eget laoreet turpis malesuada eredeu lectus sed enim suscipit euismod</h4>
+                                <p>Aliquam fringilla neque sit amet libero convallis ac consequat nulla iaculis urabitur placerat mi sed massa euismod, a tincidunt enim tinciduntam porttitor lorem ac pharetra semper</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Vestibulum cursus eros id ipsum finibus a pretium justo aliquam</h4>
+                                <p>Etiam cursus lorem eget sapien euismod, ac elementum urna tempusonec dapibus</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Nunc erat nunc ullamcorper sit amet odio vel accumsan viverra velit aliquam fringilla neque sit amet libero convallis, ac consequat nulla iaculis.</h4>
+                                <p>Suspendisse aliquam sapien vitae elit ornare accumsan in dictum eratraesent pulvinar eros</p>
+                            </div>
+                        </div>
+
+                        <div class="listview__item">
+                            <div class="listview__content">
+                                <h4>Pellentesque vitae leo vestibulum odio mollis porta blandit eget nunc</h4>
+                                <p>Suspendisse ullamcorper purus efficitur lorem hendrerit, rhoncus dignissim lorem vehicula</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix mb-3"></div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

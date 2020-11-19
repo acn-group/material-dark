@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "ui",
+                "link": "breadcrumbs"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Breadcrumb <small>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</small></h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <code>::before</code> and <code>content</code></p>
+
+                        <br>
+
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            </ol>
+                        </nav>
+                          
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                        </nav>
+                          
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb mb-0">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item"><a href="#">Library</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

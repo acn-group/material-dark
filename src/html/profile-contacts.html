@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "profile"
+            })
+
+            <section class="content">
+                <div class="content__inner content__inner--sm">
+                    <header class="content__title">
+                        <h1>Malinda Hollaway <small>Web/UI Developer, Edinburgh, Scotland</small></h1>
+                    </header>
+
+                    @@include('_includes/_profile/_info.html')
+                    
+                    @@include('_includes/_profile/_toolbar.html', {
+                        "link": "contacts"
+                    })
+
+                    <div class="contacts row">
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/1.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Cathy Shelton</strong>
+                                    <small>cathy.shelton31@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/3.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Marilyn Thomas</strong>
+                                    <small>marilyn@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/4.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Dwight Gilbert</strong>
+                                    <small>dwight@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/5.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Cody Moreno</strong>
+                                    <small>moreno@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/6.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Jamie Freeman</strong>
+                                    <small>freeman@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/7.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Charles Spencer</strong>
+                                    <small>charles@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/8.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Vickie Reed</strong>
+                                    <small>reed@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/9.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Lauren Ruiz</strong>
+                                    <small>ruiz@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/10.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Marlene Vasquez</strong>
+                                    <small>vasquez@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/11.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Loretta Morrisonz</strong>
+                                    <small>morrisonz@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/12.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Yvonne Wood</strong>
+                                    <small>wood@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/13.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Denise Franklin</strong>
+                                    <small>franklin@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/14.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Joseph Gonzalez</strong>
+                                    <small>gonzalez@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/15.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Rick Graham</strong>
+                                    <small>graham@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/16.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Alexander Bailey</strong>
+                                    <small>bailey@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/1.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Cathy Shelton</strong>
+                                    <small>cathy.shelton31@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/2.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Stella Flores</strong>
+                                    <small>stella@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/3.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Marilyn Thomas</strong>
+                                    <small>marilyn@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/4.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Dwight Gilbert</strong>
+                                    <small>dwight@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/5.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Cody Moreno</strong>
+                                    <small>moreno@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/6.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Jamie Freeman</strong>
+                                    <small>freeman@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/7.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Charles Spencer</strong>
+                                    <small>charles@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/8.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Vickie Reed</strong>
+                                    <small>reed@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/9.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Lauren Ruiz</strong>
+                                    <small>ruiz@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/10.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Marlene Vasquez</strong>
+                                    <small>vasquez@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/11.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Loretta Morrisonz</strong>
+                                    <small>morrisonz@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/12.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Yvonne Wood</strong>
+                                    <small>wood@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="contacts__item">
+                                <a href="" class="contacts__img">
+                                    <img src="demo/img/contacts/13.jpg" alt="">
+                                </a>
+
+                                <div class="contacts__info">
+                                    <strong>Denise Franklin</strong>
+                                    <small>franklin@example.com</small>
+                                </div>
+
+                                <button class="contacts__btn">Following</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

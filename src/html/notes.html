@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/trumbowyg/ui/trumbowyg.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "notes"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Notes <small>Vestibulum id ligula porta felis euismod semperonec id elit non mi porta gravida</small></h1>
+                </header>
+
+                <div class="row notes">
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">
+                                Maecenas faucibus mollis
+                            </div>
+                            <div class="notes__body">
+                                Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item notes__item--blue">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Donec id elit non mi porta</div>
+                            <div class="notes__body">
+                                Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item notes__item--amber">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Inceptos</div>
+
+                            <div class="notes__body">
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__body">
+                                Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__body">
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__body">
+                                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item notes__item--red">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Justo Bibendum</div>
+                            <div class="notes__body">
+                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Sed posuere consectetur est at lobortis</div>
+                            <div class="notes__body">
+                                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item notes__item--cyan">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Aenean Nibh</div>
+                            <div class="notes__body">
+                                Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__title">Amet Condimentum Nullam</div>
+                            <div class="notes__body">
+                                Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__body">
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-3 notes__item">
+                        <a href="#edit-note" data-toggle="modal">
+                            <div class="notes__body">
+                                Risus id dolor id nibh ultricies vehicula ut id elit.
+                            </div>
+                        </a>
+                        <div class="notes__actions" data-demo-action="delete-listing">
+                            <i class="zwicon-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="view-more"><i class="zwicon-refresh-left"></i> Load more notes</a>
+
+                <!-- View modal -->
+                <div class="modal fade note-view" id="edit-note" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body pb-0">
+                                <div class="form-group form-group--light">
+                                    <input type="text" class="form-control" placeholder="Note Title" value="Morbi leo risus porta consectetur vestibulum eros">
+                                </div>
+
+                                <textarea class="wysiwyg-editor">
+                                    Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </textarea>
+                            </div>
+
+                            <div class="modal-footer modal-footer--alt">
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-link">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New note modal -->
+                <div class="modal fade note-view" id="add-note" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Add new note</h5>
+                            </div>
+
+                            <div class="modal-body pb-0">
+                                <div class="note-view__field">
+                                    <input type="text" class="form-control" placeholder="Note Title">
+                                </div>
+
+                                <textarea class="wysiwyg-editor" placeholder="Your note goes here..."></textarea>
+                            </div>
+
+                            <div class="modal-footer modal-footer--alt">
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Dismiss</button>
+                                <button type="button" class="btn btn-link">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-danger btn--action btn--fixed zwicon-plus" data-toggle="modal" data-target="#add-note"></button>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <script src="resources/vendors/clamp.js/clamp.js"></script>
+        <script src="resources/vendors/trumbowyg/trumbowyg.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

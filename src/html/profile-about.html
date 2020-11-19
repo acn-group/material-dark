@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "profile"
+            })
+
+            <section class="content">
+                <div class="content__inner content__inner--sm">
+                    <header class="content__title">
+                        <h1>Malinda Hollaway <small>Web/UI Developer, Edinburgh, Scotland</small></h1>
+                    </header>
+
+                    @@include('_includes/_profile/_info.html')
+                    
+                    @@include('_includes/_profile/_toolbar.html', {
+                        "link": "about"
+                    })
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-body__title">About Mallinda Hollaway</h5>
+
+                            <p>Pellentesque vitae quam quis tellus dignissim faucibus. Suspendisse mattis felis at faucibus lobortis. Sed sit amet tellus dolor. Fusce quis sollicitudin velit. Praesent gravida ullamcorper lectus et tincidunt. Phasellus lectus quam, porta pharetra feugiat in, auctor eget dolor.</p>
+
+                            <p>Vestibulum tincidunt imperdiet egestas. In in nunc vitae elit tincidunt tristique id eu justo. Quisque gravida maximus orci, vulputate pharetra mauris commodo at. Mauris eget fermentum ipsum, quis faucibus neque. Fusce eleifend sapien sit amet convallis rhoncus. Proin commodo lacinia lectus, et tempus turpis.</p>
+
+                            <br>
+
+                            <h5 class="card-body__title">Contact Information</h5>
+
+                            <ul class="icon-list">
+                                <li><i class="zwicon-phone"></i>308-360-8938</li>
+                                <li><i class="zwicon-mail"></i>robertbosborne@inbound.plus</li>
+                                <li><i class="zwicon-pin"></i>5470 Madison Street Severna Park, MD 21146</li>
+                                <li><i class="zwicon-chat"></i>@malinda-h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

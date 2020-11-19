@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "components",
+                "link": "modals"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Modals</h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic example</h4>
+                        <h6 class="card-subtitle">Below is a static modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</h6>
+
+                        <div class="modal-demo">
+                            <div class="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Modal title</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis..</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-link">Save changes</button>
+                                            <button type="button" class="btn btn-link">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Click on the button below to open the modal</p>
+
+                        <button class="btn btn-theme" data-toggle="modal" data-target="#modal-default">Open static modal</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Modal sizes</h4>
+                        <h6 class="card-subtitle">Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</h6>
+
+                        <div class="btn-demo">
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-xl">Extra large modal</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-large">Large modal</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-small">Small modal</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Other modal examples</h4>
+
+                        <div class="btn-demo">
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-no-backdrop">Backdrop disabled</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-backdrop-ignore">Ignore backdrop click</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-keyboard">Keyboard disabled</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-long-content">Scrolling long content</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-scrollable">Scrollable within modal</button>
+                            <button class="btn btn-theme" data-toggle="modal" data-target="#modal-centered">Vertically centered</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Default -->
+                <div class="modal fade" id="modal-default" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XL -->
+                <div class="modal fade" id="modal-xl" tabindex="-1">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Extra large modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Large -->
+                <div class="modal fade" id="modal-large" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Large modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small -->
+                <div class="modal fade" id="modal-small" tabindex="-1">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Small modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backdrop disabled -->
+                <div class="modal fade" id="modal-no-backdrop" data-backdrop="false" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ignore backdrop click -->
+                <div class="modal fade" id="modal-backdrop-ignore" data-backdrop="static" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keyboard disabled -->
+                <div class="modal fade" id="modal-keyboard" data-keyboard="false" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title pull-left">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrolling long content -->
+                <div class="modal fade" id="modal-long-content" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                                <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                                <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+                                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrollable within modal -->
+                <div class="modal fade" id="modal-scrollable" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                                <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                                <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+                                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vertically centered -->
+                <div class="modal fade" id="modal-centered" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Default modal</h5>
+                            </div>
+                            <div class="modal-body">
+                                Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-link">Save changes</button>
+                                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

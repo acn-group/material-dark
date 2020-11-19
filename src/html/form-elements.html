@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "forms",
+                "link": "form-elements"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Form Elements</h1>
+                </header>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Form controls</h4>
+                        <h6 class="card-subtitle">Textual form controls like <code>&lt;input&gt;</code>s, <code class="highlighter-rouge">&lt;select&gt;</code>s, and <code>&lt;textarea&gt;</code>s are styled with the <code>.form-control</code> class. Included are styles for general appearance, focus state, sizing, and more.</h6>
+
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="email" class="form-control" placeholder="David Smith">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Example select</label>
+                                    <select class="form-control">
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                        <option>Option 5</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Example textarea</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </form>
+
+                        <br>
+                        <br>
+
+                        <h5 class="card-body__title">Sizing</h5>
+                        <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Large">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Default">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-sm" placeholder="Small">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="select">
+                                        <select class="form-control form-control-lg">
+                                            <option>Large</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="select">
+                                        <select class="form-control">
+                                            <option>Default</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="select">
+                                        <select class="form-control form-control-sm">
+                                            <option>Small</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                            <option>Option 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h5 class="card-body__title">Readonly</h5>
+                        <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Readonly Textual Input" readonly>
+                                </div>
+
+                                <div class="form-group mb-0">
+                                    <textarea class="form-control" readonly placeholder="Readonly Textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Custom Checkboxes and Radios</h4>
+                        <h6 class="card-subtitle">These are custom styled checkbox and radios in order to prevent browser's default design.</h6>
+
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" id="customCheck1">
+                            <label class="checkbox__label" for="customCheck1">Check this custom checkbox</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" id="customCheck2">
+                            <label class="checkbox__label" for="customCheck2">Another custom styled checkbox</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" id="customCheck3">
+                            <label class="checkbox__label" for="customCheck3">And another one with same styling</label>
+                        </div>
+
+                        <div class="clearfix mt-3"></div>
+
+                        <div class="radio">
+                            <input type="radio" name="customRadio" class="radio__input" id="customRadio1">
+                            <label class="radio__label" for="customRadio1">Toggle this custom radio</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="customRadio" class="radio__input" id="customRadio2">
+                            <label class="radio__label" for="customRadio2">Or toggle this other custom radio</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="customRadio" class="radio__input" id="customRadio3">
+                            <label class="radio__label" for="customRadio3">Or this one with the same styling</label>
+                        </div>
+
+                        <h5 class="card-body__title">Disabled</h5>
+                        <p>Custom checkboxes and radios can also be disabled. Add the <code>disabled</code> boolean attribute to the <code>&#x3C;input&#x3E;</code> and the custom indicator and label description will be automatically styled.</p>
+
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" id="customCheck4" disabled>
+                            <label class="checkbox__label" for="customCheck4">This is a disabled checkbox</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="customRadio" class="radio__input" id="customRadio4" disabled>
+                            <label class="radio__label" for="customRadio4">And this one is a disabled radio</label>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

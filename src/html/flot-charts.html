@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "charts",
+                "link": "flot"
+            })
+
+            <section class="content">
+                <header class="content__title">
+                    <h1>Flot <small>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.</small></h1>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Line Chart</h4>
+
+                                <div class="flot-chart flot-line"></div>
+                                <div class="flot-chart-legends flot-chart-legends--line"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Line Chart with curved edges</h4>
+                                <h6 class="card-subtitle">Curved edges made possible with the help of curvedLines Flot plugin.</h6>
+
+                                <div class="flot-chart flot-curved-line"></div>
+                                <div class="flot-chart-legends flot-chart-legends--curved"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Pie Chart</h4>
+
+                                <div class="flot-chart flot-pie"></div>
+                                <div class="flot-chart-legends flot-chart-legend--pie"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Bar Chart</h4>
+
+                                <div class="flot-chart flot-bar"></div>
+                                <div class="flot-chart-legends flot-chart-legends--bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Dynamic Data Chart</h4>
+
+                                <div class="flot-chart flot-dynamic"></div>
+                                <div class="flot-chart-legends flot-chart-legends--dynamic"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Donut Chart</h4>
+
+                                <div class="flot-chart flot-donut"></div>
+                                <div class="flot-chart-legends flot-chart-legend--donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @@include('_includes/_footer.html')
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <script src="resources/vendors/flot/jquery.flot.js"></script>
+        <script src="resources/vendors/flot/jquery.flot.pie.js"></script>
+        <script src="resources/vendors/flot/jquery.flot.resize.js"></script>
+        <script src="resources/vendors/flot/flot.curvedlines/curvedLines.js"></script>
+        <script src="resources/vendors/flot/flot.orderbars/jquery.flot.orderBars.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>

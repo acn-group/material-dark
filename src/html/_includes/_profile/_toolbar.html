@@ -1,0 +1,16 @@
+<div class="toolbar">
+    <nav class="toolbar__nav">
+        <a @@if(context.link === "about"){ class="active"} href="profile-about.html">About</a>
+        <a @@if(context.link === "photos"){ class="active"} href="profile-photos.html">Photos</a>
+        <a @@if(context.link === "contacts"){ class="active"} href="profile-contacts.html">Contacts</a>
+    </nav>
+
+    <div class="actions">
+        <i class="actions__item zwicon-search toolbar__search-open"></i>
+    </div>
+
+    <div class="toolbar__search">
+        <input type="text" placeholder="Search...">
+        <i class="toolbar__search__close zwicon-arrow-left toolbar__search-close"></i>
+    </div>
+</div>

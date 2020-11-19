@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('_includes/_meta.html')
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="resources/vendors/zwicon/zwicon.min.css">
+        <link rel="stylesheet" href="resources/vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="resources/vendors/overlay-scrollbars/OverlayScrollbars.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="resources/css/app.min.css">
+
+        <!-- Demo -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+    </head>
+
+    <body>
+        @@include('_includes/_page-loader.html')
+
+        @@include('_includes/_header.html')
+
+        <div class="main">
+            @@include('_includes/_notifications.html')
+
+            @@include('_includes/_navigation.html', {
+                "group": "pages",
+                "link": "blog"
+            })
+
+            <section class="content">
+                <div class="content__inner">
+                    <header class="content__title">
+                        <h1>MAED 2.0 Blog <small>Duis mollisest non commodo luctus nisierat porttito</small></h1>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <img class="card-img-top" src="demo/img/blog/1.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h4 class="card-title">Curabitur blandit tempus porttitor</h4>
+                                    <h6 class="card-subtitle">by Sam Andersion on 17th July 2017</h6>
+
+                                    <p class="card-text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+                                    <a href="blog-detail.html" class="card-link">Read More...</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="demo/img/blog/2.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h4 class="card-title">Maecenas sed diam eget risus varius blandit</h4>
+                                    <h6 class="card-subtitle">by Dave Rubin on 15th July 2017</h6>
+
+                                    <p class="card-text">Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                                    <a href="blog-detail.html" class="card-link">Read More...</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="demo/img/blog/3.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h4 class="card-title">Donec id elit non mi porta gravida at eget metus</h4>
+                                    <h6 class="card-subtitle">by Malinda Hollaway on 10th July 2017</h6>
+
+                                    <p class="card-text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+                                    <a href="blog-detail.html" class="card-link">Read More...</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="demo/img/blog/4.jpg" alt="">
+
+                                <div class="card-body">
+                                    <h4 class="card-title">Maecenas faucibus mollis interdum</h4>
+                                    <h6 class="card-subtitle">by Nate Davis on 5th July 2017</h6>
+
+                                    <p class="card-text">
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+                                    <a href="blog-detail.html" class="card-link">Read More...</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Curabitur blandit tempus porttitor</h4>
+                                    <h6 class="card-subtitle">by Sam Andersion on 4th July 2017</h6>
+
+                                    <p class="card-text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+                                    <a href="blog-detail.html" class="card-link">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 d-none d-lg-block">
+                            @@include('_includes/_blog/_posts.html', {
+                                "type": "posts"
+                            })
+
+                            @@include('_includes/_blog/_featured-post.html')
+
+                            @@include('_includes/_blog/_categories.html')
+                        </div>
+                    </div>
+
+                    @@include('_includes/_footer.html')
+                </div>
+            </section>
+        </div>
+
+        <!-- Vendors -->
+        <script src="resources/vendors/jquery/jquery.min.js"></script>
+        <script src="resources/vendors/popper.js/popper.min.js"></script>
+        <script src="resources/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/vendors/overlay-scrollbars/jquery.overlayScrollbars.min.js"></script>
+
+        <!-- App functions -->
+        <script src="resources/js/app.min.js"></script>
+    </body>
+</html>
