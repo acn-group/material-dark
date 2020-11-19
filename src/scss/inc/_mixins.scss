@@ -1,0 +1,53 @@
+// Placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
+
+
+// Center aling using flex
+@mixin flex-aligned($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+
+// Font Icon (for before/after content)
+@mixin font-icon($content, $font-size) {
+  font-family: $font-family-icon;
+  content: $content;
+  font-size: $font-size;
+}
+
+
+// Background image cover
+@mixin bg-cover() {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+// CSS Animations based on animate.css
+@mixin animate($name, $duration) {
+  -webkit-animation-name: $name;
+  animation-name: $name;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+// Card
+@mixin card() {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: $card-shadow;
+}

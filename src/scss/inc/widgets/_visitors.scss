@@ -1,0 +1,34 @@
+.visitors__stats {
+  @include clearfix();
+  margin: 0 -0.5rem 2rem;
+
+  & > div {
+    padding: 1.25rem;
+    float: left;
+    margin: 0 0.5rem;
+    width: calc(50% - 1rem);
+    border: 2px solid $theme-border-color;
+    border-radius: $border-radius;
+
+    & > strong {
+      font-size: 1.5rem;
+      font-weight: $font-weight-normal;
+      line-height: 100%;
+      margin-top: 0.1rem;
+      display: block;
+      color: $theme-color-heading;
+    }
+
+    & > small {
+      display: block;
+      font-size: 1rem;
+      line-height: 100%;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.visitors__map {
+  width: 100%;
+  height: 250px;
+}

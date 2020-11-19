@@ -1,0 +1,42 @@
+.table {
+  th {
+    font-weight: $font-weight-base;
+    color: $theme-color-heading;
+  }
+
+  thead {
+    & > tr {
+      & > th {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.table-dark {
+  & > thead {
+    & > tr {
+      & > th {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.thead-dark,
+.thead-light {
+  & > tr {
+    & > th {
+      border-top: 0;
+    }
+  }
+
+  & + tbody {
+    & > tr:first-child {
+      & > td,
+      & >th {
+        border-top: 0;
+      }
+    }
+  }
+}

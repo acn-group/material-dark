@@ -1,0 +1,39 @@
+.swal2-popup {
+  border-radius: $border-radius;
+}
+
+.swal2-modal {
+  .swal2-content {
+    color: lighten($theme-invert-color, 15%);
+    font-weight: $font-weight-base;
+    font-size: 1rem;
+    line-height: $line-height-base;
+  }
+}
+.swal2-container.ca {
+  .swal2-title {
+    font-size: 1.25rem;
+    color: $theme-invert-color;
+    font-weight: $font-weight-base;
+  }
+
+  .swal2-footer {
+    border-color: $dropdown-divider-bg;
+  }
+
+  .swal2-icon {
+    margin-top: 0;
+  }
+}
+
+.swal2-actions {
+  .btn {
+    color: $theme-invert-color;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $modal-footer-link-hover-bg;
+    }
+  }
+}
+

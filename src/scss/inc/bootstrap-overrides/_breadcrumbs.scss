@@ -1,0 +1,15 @@
+.breadcrumb {
+  border-radius: 0;
+}
+
+.breadcrumb-item {
+  &:not(.active) {
+    & > a {
+      color: $text-muted;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

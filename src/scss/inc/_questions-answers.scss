@@ -1,0 +1,32 @@
+.q-a__item {
+  align-items: flex-start;
+}
+
+.q-a__stat {
+  margin: 0.35rem 2rem 0 0;
+  align-self: flex-start;
+
+  & > span {
+    display: inline-block;
+    width: 80px;
+    border-radius: $border-radius;
+    background-color: $theme-dark-4;
+    text-align: center;
+    padding: 1.1rem 0.5rem 0.65rem;
+    margin-right: 0.2rem;
+
+    & > strong {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 100%;
+      color: $theme-color-heading;
+      font-weight: $font-weight-base;
+    }
+
+    & > small {
+      text-transform: uppercase;
+      line-height: 100%;
+      color: $theme-color-sub;
+    }
+  }
+}

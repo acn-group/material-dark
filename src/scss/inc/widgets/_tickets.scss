@@ -1,0 +1,20 @@
+.tickets__label {
+    padding: 0.55rem 0.75rem;
+    line-height: 100%;
+    background-color: $theme-light;
+    font-size: 0.9rem;
+    color: $theme-dark-1;
+    flex-shrink: 0;
+    
+    &:first-child {
+        border-bottom-left-radius: $border-radius-sm;
+        border-top-left-radius: $border-radius-sm;
+    }
+}
+
+.tickets__label--severity {
+    color: $white;
+    margin-right: 1rem;
+    border-bottom-right-radius: $border-radius-sm;
+    border-top-right-radius: $border-radius-sm;
+}

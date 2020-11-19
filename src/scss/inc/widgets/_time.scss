@@ -1,0 +1,29 @@
+.time {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  & > span {
+    background-color: $theme-dark-5;
+    border-radius: $border-radius;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    padding-top: 2px;
+    font-weight: $font-weight-light;
+    color: $theme-color-heading;
+    @include flex-aligned();
+
+    & + span {
+      &:before {
+        content: ':';
+        position: absolute;
+        left: -13px;
+        color: $theme-color-sub;
+      }
+    }
+  }
+}

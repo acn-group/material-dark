@@ -1,0 +1,117 @@
+.listview__header {
+  color: $headings-color;
+  text-transform: uppercase;
+  padding: 1.2rem 1rem 1rem;
+  border-bottom: 1px solid $theme-border-color;
+  text-align: center;
+
+  .actions {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+  }
+}
+
+.listview__scroll {
+  overflow-y: auto;
+}
+
+.listview__item {
+  padding: 1.15rem $card-spacer-x;
+  transition: background-color 300ms, border-color 300ms;
+  display: flex;
+  align-items: center;
+
+  & > .checkbox {
+    margin-right: 0.5rem;
+  }
+
+  .actions {
+    align-self: flex-start;
+    margin: -0.5rem -1rem 0 auto;
+  }
+
+  & > .avatar-img,
+  & > .avatar-char {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.listview__content {
+  flex: 1;
+  min-width: 0;
+
+  & > h4 {
+    font-size: 1rem;
+    color: $theme-color-heading-sub;
+    position: relative;
+    font-weight: $font-weight-base;
+    margin: 0;
+
+    & > small {
+      float: right;
+      color: $theme-color-sub;
+      font-weight: $font-weight-bold;
+      font-size: 0.85rem;
+      margin-top: 0.1rem;
+    }
+
+    & + p {
+      color: $theme-color-sub;
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  & > p {
+    margin-bottom: 0;
+  }
+}
+
+.listview__attrs {
+  flex: 1 100%;
+  margin-top: 0.7rem;
+
+  & > span {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid $theme-border-color;
+    display: inline-block;
+    line-height: 100%;
+    font-size: 0.9rem;
+    margin: 0.2rem 0.05rem 0.055rem 0;
+  }
+}
+
+// Listview modifier classes
+.listview--hover {
+  .listview__item {
+    &:hover {
+      border-color: transparent !important;
+      background-color: $listview-item-hover-bg;
+    }
+  }
+}
+
+.listview--striped {
+  .listview__item:nth-child(even) {
+    background-color: $listview-item-striped-bg;
+  }
+}
+
+.listview--bordered {
+  .listview__item + .listview__item {
+    border-top: 1px solid $listview-border-color;
+  }
+}
+
+.listview--truncate {
+  .listview__item {
+    .listview__content {
+      & > p,
+      & > h4 {
+        @include text-truncate()
+      }
+    }
+  }
+}

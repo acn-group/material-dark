@@ -1,0 +1,174 @@
+.flatpickr-calendar {
+  border-radius: $border-radius;
+  border: 0;
+  box-shadow: $dropdown-box-shadow;
+  width: auto;
+  user-select: none;
+  background-color: $dropdown-bg;
+  margin-top: -3px;
+  color: $theme-invert-color;
+  padding: 10px;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+
+.flatpickr-months {
+  border-radius: $border-radius $border-radius 0 0;
+
+  .flatpickr-month {
+    height: 60px;
+    color: $theme-invert-color;
+  }
+
+  .flatpickr-prev-month,
+  .flatpickr-next-month {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 50%;
+    top: 13px;
+    font-size: 3rem;
+    transition: background-color 300ms;
+    color: $theme-invert-color;
+    @include flex-aligned();
+
+    &:hover {
+      color: $theme-invert-color;
+      background-color: $white;
+    }
+  }
+
+  .flatpickr-prev-month {
+    margin-left: 15px;
+  }
+
+  .flatpickr-next-month {
+    margin-right: 15px;
+  }
+}
+
+.flatpickr-current-month {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-top: 15px;
+
+  span.cur-month,
+  input.cur-year {
+    font-weight: $font-weight-bold;
+  }
+
+  span.cur-month:hover {
+    background-color: transparent;
+  }
+
+  .numInputWrapper {
+    &:hover {
+      background-color: transparent;
+    }
+
+    span {
+      border: 0;
+      right: -5px;
+      padding: 0;
+
+      &:after {
+        left: 3px;
+      }
+
+      &.arrowUp:after {
+        border-bottom-color: $theme-dark-5;
+      }
+
+      &.arrowDown:after {
+        border-top-color: $theme-dark-5;
+      }
+    }
+  }
+}
+
+span.flatpickr-weekday {
+  font-weight: $font-weight-base;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: inherit;
+}
+
+.flatpickr-day {
+  font-size: 0.9rem;
+  border: 0;
+  color: inherit;
+
+  &.selected {
+    &, &:hover {
+      background-color: $white !important;
+      color: $theme-invert-color !important;
+    }
+  }
+
+  &.today {
+    &, &:hover {
+      background-color: $theme-dark-5;
+      color: $theme-color-heading;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &.nextMonthDay,
+  &.prevMonthDay {
+    color: rgba($theme-color-sub, 0.5);
+
+    &:hover {
+      background-color: rgba($white, 0.5);
+    }
+  }
+}
+
+.flatpickr-time {
+  background-color: $white;
+  border-radius: $border-radius;
+}
+
+.numInputWrapper {
+  span {
+    &:hover {
+      background-color: rgba($white, 0.1);
+    }
+  }
+}
+
+.flatpickr-time {
+  border-top: 1px solid rgba($white, 0.1) !important;
+
+  .numInputWrapper,
+  .flatpickr-am-pm {
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  
+  input,
+  .flatpickr-am-pm {
+    color: $theme-invert-color;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  input {
+    &.flatpickr-hour {
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+
+.flatpickr-innerContainer {
+  padding: 5px 0;
+}

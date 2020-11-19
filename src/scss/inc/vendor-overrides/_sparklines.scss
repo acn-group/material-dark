@@ -1,0 +1,20 @@
+#jqstooltip {
+  text-align: center;
+  padding: 5px 10px;
+  border: 0;
+  height: auto !important;
+  width: auto !important;
+  background: $tooltip-bg;
+  border-radius: $border-radius;
+
+  .jqsfield {
+    font-size: $tooltip-font-size;
+    font-family: inherit;
+    text-align: center;
+    color: $tooltip-color;
+
+    & > span {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  padding-left: 0;
+
+  & > li {
+    &:before {
+      font-family: $font-family-icon;
+      margin-right: 1.1rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.list--dash > li:before {
+  content: '\ea68';
+}
+
+.list--check > li:before {
+  content: '\ea46';
+}
+
+.list--circle > li:before {
+  content: '\ea66';
+}

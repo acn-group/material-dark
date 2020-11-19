@@ -1,0 +1,345 @@
+// Options
+$enable-transitions: true;
+$enable-shadows: false;
+
+
+// Theme colors
+$theme-dark-1: #1e2a31;
+$theme-dark-2: #22313a;
+$theme-dark-3: #2b3c46;
+$theme-dark-4: #2f414c;
+$theme-dark-5: #394e5a;
+$theme-light: #f0f6f9;
+$theme-color: #9bbcd1;
+$theme-color-sub: #7996a9;
+$theme-color-heading: #dcf3ff;
+$theme-color-heading-sub: #b7d3e4;
+$theme-invert-color: #36576b;
+$theme-border-color: #415969;
+
+
+// Colors
+$white: #fff;
+$black: #000;
+$teal: #53ffc1;
+$purple: #ac66f5;
+$red: #E53935;
+$amber: #ffc021;
+$blue: #27a4fb;
+$green: #2cc56f;
+$cyan: #00f3e7;
+$yellow: #ffe21f;
+$lime: #8BC34A;
+$orange: #FF5722;
+$pink: #E91E63;
+$indigo: #3F51B5;
+$brown: #795548;
+$blue-grey: #607D8B;
+
+$extra-colors: (
+  white: $white,
+  black: $black,
+  teal: $teal,
+  purple: $purple,
+  red: $red,
+  amber: $amber,
+  blue: $blue,
+  green: $green,
+  cyan: $cyan,
+  yellow: $yellow,
+  lime: $lime,
+  orange: $orange,
+  pink: $pink,
+  indigo: $indigo,
+  brown: $brown,
+  blue-grey: $blue-grey
+);
+
+
+// Bootstrap brand colors
+$success: $green;
+$info: $blue;
+$warning: $amber;
+$light: $theme-light;
+$dark: $theme-dark-1;
+
+
+// Body
+$body-color: $theme-color;
+$body-bg: $theme-dark-2;
+
+
+// Typography
+$font-family-sans-serif: 'JetBrains Mono', sans-serif;
+$font-family-icon: 'zwicon';
+$font-size-root: 14px;
+$font-weight-bold: 500;
+$font-weight-base: 400;
+$font-weight-light: 300;
+$headings-color: $theme-color-heading;
+$text-muted: $theme-color-sub;
+$mark-bg: $theme-color-heading;
+
+
+// Links
+$link-hover-decoration: none;
+
+
+// Border radius
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+
+// Buttons
+$btn-focus-box-shadow: none;
+$btn-focus-width: 0;
+$btn-border-radius: 2px;
+$btn-font-size: 0.95rem;
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1rem;
+
+
+  // Form
+$input-height: 40px;
+$input-height-sm: 30px;
+$input-height-lg: 50px;
+$input-focus-box-shadow: none;
+$input-color: $body-color;
+$input-bg: transparent;
+$input-disabled-bg: transparent;
+$input-box-shadow: rgba($black, 0);
+$input-border-color: $theme-border-color;
+$input-focus-border-color: lighten($input-border-color, 20%);
+$form-group-margin-bottom: 2rem;
+$input-placeholder-color: $theme-color-sub;
+$select-bg: url(../img/forms/select-caret.svg) no-repeat bottom 5px right 5px;
+
+$form-group-light-color: $theme-invert-color;
+$form-group-light-disabled-border-color: lighten($input-border-color, 55%);
+
+
+// Form Validation
+$form-feedback-icon-valid: url(../img/forms/form-validation-valid.svg);
+$form-feedback-icon-invalid: url(../img/forms/form-validation-invalid.svg);
+$form-feedback-font-size: 0.9rem;
+
+
+// Layout
+$container-inner-width: 1250px;
+$container-inner-sm-width: 800px;
+$content-negative-margin: 145px - 1;
+
+
+// Dropdown
+$dropdown-border-width: 0;
+$dropdown-bg: $theme-light;
+$dropdown-link-color: $theme-invert-color;
+$dropdown-link-hover-color: #22465d;
+$dropdown-link-hover-bg: #dae6f1;
+$dropdown-link-active-color: $theme-color-heading;
+$dropdown-link-active-bg: $theme-dark-3;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 0.75rem;
+$dropdown-link-disabled-color: lighten($dropdown-link-color, 40%);
+$dropdown-divider-bg: lighten($theme-border-color, 50%);
+$dropdown-header-color: $theme-invert-color;
+
+
+// Header
+$header-height: 260px;
+$header-bg: $theme-dark-1;
+
+
+// Sidebar
+$sidebar-width: 20rem;
+$sidebar-box-shadow: 0 0 30px rgba($black, 0.5);
+$sidebar-bg: $theme-dark-2;
+$sidebar-header-bg: $theme-dark-1;
+$sidebar-header-height: 85px;
+$sidebar-active-z-index: 1000;
+$notifications-width: 25rem;
+
+ 
+// Card
+$card-bg: $theme-dark-3;
+$card-spacer-x: 2.2rem;
+$card-spacer-y: 2.1rem;
+$card-cap-bg: rgba($black, 0.075);
+$card-img-overlay-padding: 0;
+$card-shadow: 0 3px 3px rgba($black, 0.05); 
+$card-columns-margin: 2rem;
+$card-border-width: 0;
+$card-inner-border-radius: $border-radius;
+$card-cap-bg: $theme-dark-4;
+$card-cap-color: $theme-color-heading;
+
+
+// Tooltips
+$tooltip-padding-y: 0.7rem;
+$tooltip-padding-x:  1.1rem;
+$tooltip-bg: $theme-light;
+$tooltip-color: $theme-dark-1;
+$tooltip-arrow-color: $tooltip-bg;
+$tooltip-opacity: 1;
+$tooltip-font-size: 0.95rem;
+
+
+// Pregress Bar
+$progress-bg: $theme-dark-1;
+$progress-height: 3px;
+$progress-bar-bg: $theme-color-heading;
+
+
+// Code
+$code-color: #bd9f68;
+
+
+// HR
+$hr-border-color: $theme-dark-5;
+
+
+// Blockquotes
+$blockquote-small-color: $theme-color-sub;
+
+
+// Tabels
+$table-border-color: $theme-dark-5;
+$table-dark-bg: $theme-dark-2;
+$table-dark-color: $body-color;
+$table-dark-border-color: $theme-dark-3;
+$table-accent-bg: $theme-dark-5;
+$table-hover-bg: $table-accent-bg;
+$table-cell-padding: 1rem 1.5rem;
+$table-cell-padding-sm: 0.75rem 1rem;
+$table-head-bg: $theme-dark-5;
+$table-head-color: $theme-color-heading;
+
+
+// Checkbox + Radio
+$checkbox-radio-size: 20px;
+$checkbox-radio-border-color: $input-focus-border-color;
+$checkbox-radio-checked-border-color: $theme-light;
+$checkbox-radio-disabled-border-color: $input-border-color;
+$checkbox-radio-gutter-width: 30px;
+
+
+// Input Group
+$input-group-addon-border-color: $input-border-color;
+$input-group-addon-bg: transparent;
+
+
+// YIQ
+$yiq-contrasted-threshold:  200;
+
+
+// Nav
+$nav-link-disabled-color: rgba($theme-color-sub, 10%);
+$nav-tabs-border-width: 2px;
+$nav-tabs-border-radius: 0;
+$nav-tabs-border-color: $theme-dark-2;
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 1.5rem;
+$nav-link-padding: 1rem 1.5rem;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-color: $theme-color-heading;
+$nav-pills-link-active-bg: $theme-dark-5;
+$nav-pills-link-active-color: $theme-color-heading;
+
+ 
+// Modal
+$modal-content-bg: $theme-light;
+$modal-content-color: lighten($theme-invert-color, 7.5%);
+$modal-backdrop-bg: $theme-dark-1;
+$modal-backdrop-opacity: 0.5;
+$modal-content-box-shadow-xs: 0 5px 20px rgba($theme-dark-1, 0.3);
+$modal-content-box-shadow-sm-up: $modal-content-box-shadow-xs;
+$modal-content-border-width: 0;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+$modal-footer-link-hover-bg: lighten($theme-dark-5, 60%);
+$modal-header-padding: 25px 30px 0;
+$modal-inner-padding: 25px 30px;
+
+
+// Listview
+$listview-item-hover-bg: rgba($theme-dark-5, 0.25);
+$listview-item-striped-bg: $theme-dark-4;
+$listview-border-color: darken($theme-border-color, 8.5%);
+
+
+// Alert
+$alert-padding-y: 1.5rem;
+$alert-padding-x: 2rem;
+$alert-link-font-weight: normal;
+$alert-border-width: 0;
+$alert-color-level: -10;
+$alert-bg-level: 1.5;
+
+
+// Close
+$close-font-weight: normal;
+$close-text-shadow: none;
+
+
+// Badges
+$badge-border-radius: 2px;
+$badge-padding-y: 0.6em;
+$badge-padding-x: 0.75em;
+$badge-font-size: 95%;
+$badge-font-weight: 400;
+$badge-pill-padding-x: 1em;
+
+
+// Breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-padding-x: 0.25rem;
+$breadcrumb-active-color: $theme-color-heading;
+$breadcrumb-divider-color: $theme-color-sub;
+
+
+// Jumbotron
+$jumbotron-bg: $theme-dark-3;
+
+
+// Pagination
+$pagination-border-width: 0;
+$pagination-padding-y: 0;
+$pagination-padding-x: 0;
+$pagination-bg: $theme-dark-2;
+$pagination-hover-bg: $theme-dark-1;
+$pagination-color: $theme-color;
+$pagination-hover-color: $theme-color-heading;
+$pagination-disabled-bg: $pagination-bg;
+$pagination-disabled-color: darken($theme-color-sub, 15%);
+$pagination-active-bg: $theme-light;
+$pagination-active-color: $theme-invert-color;
+$pagination-focus-box-shadow: none;
+
+
+// Carosuel
+$carousel-control-prev-icon-bg: url(../img/carousel/prev.svg);
+$carousel-control-next-icon-bg: url(../img/carousel/next.svg);
+$carousel-control-icon-width: 40px;
+$carousel-control-opacity: 0.8;
+$carousel-caption-color: $theme-color;
+$carousel-indicator-active-bg: $theme-color-heading;
+
+
+// Popovers
+$popover-box-shadow: 0 2px 30px rgba($theme-dark-1, 0.1);
+$popover-arrow-outer-color: transparent;
+$popover-body-color: $theme-invert-color;
+$popover-body-padding-x: 1rem;
+$popover-body-padding-y: 1rem;
+$popover-header-padding-x: 1rem;
+$popover-header-padding-y: 1rem;
+$popover-header-bg: transparent;
+$popover-header-color: $theme-invert-color;
+$popover-bg: $theme-light;
+$popover-font-size: 0.9rem;
+
+
+// Toast
+$toast-header-color: $theme-invert-color;
+$toast-padding-y: 0.5rem;

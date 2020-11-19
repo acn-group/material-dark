@@ -1,0 +1,50 @@
+.pie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pie-list__item {
+  text-align: center;
+  padding: 2rem 0;
+  display: inline-block;
+  flex: 1 1 33.33%;
+
+  &:nth-child(2n) {
+    background-color: lighten($theme-dark-3, 2%);
+  }
+
+  .easy-pie-chart {
+    margin-top: 5px;
+  }
+}
+
+.pie-list__info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  color: $theme-color-sub;
+  @include flex-aligned();
+
+  & > span {
+    font-size: 0.9rem;
+    line-height: 110%;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+  }
+
+  & > h4 {
+    margin: 0 0 0.25rem 0.25rem;
+    line-height: 100%;
+    font-weight: $font-weight-light;
+    font-size: 1.25rem;
+
+    &:after {
+      content: '%';
+      font-size: 1rem;
+    }
+  }
+}

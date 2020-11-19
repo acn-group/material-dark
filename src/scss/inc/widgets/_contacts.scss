@@ -1,0 +1,10 @@
+.w-contacts__map {
+  display: block;
+  padding: 5px;
+
+  img {
+    width: 100%;
+    border-radius: 0 0 $border-radius $border-radius;
+    margin: -20px 0 0;
+  }
+}

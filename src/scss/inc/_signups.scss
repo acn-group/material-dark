@@ -1,0 +1,14 @@
+.signups__list {
+  text-align: center;
+
+  & > a {
+    vertical-align: top;
+    margin: 4px 2px;
+    display: inline-block;
+  }
+
+  .avatar-char,
+  .avatar-img {
+    margin: 0;
+  }
+}

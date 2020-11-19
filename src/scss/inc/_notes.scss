@@ -1,0 +1,74 @@
+//Listing
+.notes__item {
+  margin-bottom: $grid-gutter-width;
+
+  & > a {
+    height: 170px;
+    background-color: $card-bg;
+    display: block;
+    padding: 1.8rem 2rem 0;
+    position: relative;
+    color: $theme-color-sub;
+    transition: background-color 300ms;
+
+    &,
+    &:before {
+      border-radius: $border-radius;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc(100% - 10px);
+      bottom: -5px;
+      left: 5px;
+      z-index: -1;
+      height: 10px;
+      background-color: $theme-dark-1;
+    }
+  }
+
+  &:hover {
+    .notes__actions {
+      opacity: 1;
+    }
+  }
+}
+
+.notes__title {
+  color: $headings-color;
+  margin-bottom: 1.1rem;
+  @include text-truncate();
+}
+
+.notes__actions {
+  position: absolute;
+  right: 2.2rem;
+  bottom: 1rem;
+  font-size: 1.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: $theme-dark-2;
+  border-radius: 50%;
+  color: $theme-color-heading;
+  opacity: 0;
+  transition: opacity 300ms, background-color 300ms;
+  cursor: pointer;
+  @include flex-aligned();
+
+  &:hover {
+    background: $theme-dark-1;
+  }
+}
+
+
+//New Note Modal (Disable cide view)
+.note-view {
+  .trumbowyg-button-pane {
+    & > .trumbowyg-button-group {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}

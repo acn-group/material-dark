@@ -1,0 +1,159 @@
+// Dashboard
+.widget-lists {
+  column-gap: $grid-gutter-width;
+
+  @media(min-width: 1500px) {
+    column-count: 3;
+  }
+
+  @media (min-width: 900px) and (max-width: 1499px) {
+    column-count: 2;
+  }
+
+  @media screen and (max-width: 899px) {
+    column-count: 1;
+  }
+}
+
+
+// Avatars
+.avatar-img,
+.avatar-char {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.avatar-char {
+  line-height: 2.9rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  color: $theme-color-heading;
+  background-color: $theme-dark-5;
+  font-style: normal;
+  text-shadow: 0 0 15px rgba($white, 0.55);
+
+  & > i {
+    line-height: 2.9rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 0 $white;
+  }
+}
+
+
+// View More
+.view-more {
+  padding: 1.1rem 0;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  transition: color 300ms;
+  color: $theme-color-sub;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: -1px;
+  }
+
+  &:hover {
+    color: $theme-color-heading;
+  }
+}
+
+.card-body {
+  .view-more {
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+
+
+// Action Icons
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions__item {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $theme-color;
+  transition: background-color 300ms, color 300ms;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include flex-aligned();
+  }
+
+  &.show,
+  &:hover {
+    background-color: rgba($theme-dark-5, 0.35);
+    color: $theme-color-heading;
+  }
+}
+
+
+// Tags
+.tags {
+  & > a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid $theme-border-color;
+    color: $body-color;
+    margin: 0 0.3rem 0.5rem 0;
+    transition: border-color 300ms;
+    border-radius: $border-radius;
+
+    &:hover {
+      border-color: lighten($theme-border-color, 5%);
+    }
+  }
+}
+
+
+// Icon Lists
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    position: relative;
+
+    & + li {
+      padding-top: 0.6rem;
+    }
+
+    address {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0.25rem;
+    }
+
+    & > i {
+      width: 2.5rem;
+      text-align: center;
+      font-size: 1.25rem;
+      top: 0.12rem;
+      position: relative;
+      font-style: normal;
+      display: inline-block;
+    }
+  }
+}

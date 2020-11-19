@@ -1,0 +1,142 @@
+.navigation {
+  width: $sidebar-width;
+  left: 0;
+
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    top: $content-negative-margin;
+  }
+
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: $sidebar-bg;
+    z-index: 10;
+    box-shadow: $sidebar-box-shadow;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 0;
+    transform: translate3d(-20%,0,0);
+
+    &:not(.sidebar--active) {
+      pointer-events: none;
+    }
+  }
+
+  .scrollbar {
+    padding: 2rem $card-columns-margin 0;
+
+    @include media-breakpoint-down(lg) {
+      height: 100%;
+    }
+  }
+}
+
+%navigation-active {
+  color: $theme-color-heading;
+  background-color: $theme-dark-1;
+
+  & > i {
+    opacity: 1;
+  } 
+}
+
+.navigation__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: block;
+    color: $theme-color-sub;
+    transition: color 300ms;
+
+    &:hover {
+      color: $theme-color-heading;
+
+      & > i {
+        opacity: 1;
+      }
+    }
+  }
+
+  & > li {
+    & > a {
+      border-radius: $border-radius;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1rem 0.7rem;
+
+      & > i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        position: relative;
+        opacity: 0.65;
+        transition: opacity 300ms;
+        top: -1px;
+      }
+
+      &.active {
+        @extend %navigation-active;
+      }
+    }
+  }
+}
+
+.navigation__sub {
+  & > ul {
+    @include list-unstyled();
+    margin: 0;
+    padding: 0 1rem 0 3.5rem;
+    position: relative;
+    top: -0.25rem;
+    display: none;
+
+    & > li {
+      & > a {
+        padding: 0.4rem 0;
+        font-size: 0.95rem;
+
+        &.active {
+          position: relative;
+          color: $theme-color-heading;
+          
+          &::before {
+            content: '●';
+            font-size: 0.75rem;
+            position: absolute;
+            left: -1.9rem;
+            top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  & > a {
+    position: relative;
+
+    &.active {    
+      margin-bottom: 0.75rem;
+
+      & + ul {
+        display: block;
+      }
+    }
+  }
+}
+
+.navigation__close {
+  background-color: $sidebar-header-bg;
+  display: block;
+  padding: 1.25rem 2.5rem;
+
+  & > i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $theme-dark-5;
+  }
+}

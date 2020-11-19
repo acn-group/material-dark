@@ -1,0 +1,42 @@
+.colorpicker {
+  padding: 5px;
+  margin-top: -1px;
+  border-radius: $border-radius;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
+  div {
+    border-radius: $border-radius;
+  }
+}
+
+.colorpicker-saturation {
+  i {
+    border: 0;
+
+    &, b {
+      height: 10px;
+      width: 10px;
+    }
+  }
+}
+
+.colorpicker-hue,
+.colorpicker-alpha {
+  width: 20px;
+}
+
+.colorpicker-color {
+  &, div {
+    height: 20px;
+  }
+}
+
+.color-picker__preview {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}

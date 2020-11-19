@@ -1,0 +1,11 @@
+.issue-tracker__item {
+  margin-left: 2rem;
+
+  & > [class*="zwicon-"] {
+    font-size: 1.4rem;
+    vertical-align: top;
+    position: relative;
+    top: 0.05rem;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,111 @@
+ul.jqtree-tree {
+  border-top: 1px solid $theme-border-color;
+
+  li {
+    &.jqtree-selected {
+      & > .jqtree-element {
+        transition: background-color 200ms, border-color 200ms;
+        border-color: transparent;
+
+        &, &:hover {
+          background: $theme-border-color;
+          text-shadow: none;
+        }
+      }
+    }
+
+    &:not(.jqtree-selected) {
+      & > .jqtree-element {
+        &:hover {
+          background-color: $theme-dark-4;
+        }
+      }
+    }
+
+    &.jqtree-folder {
+      margin-bottom: 0;
+
+      &:not(.jqtree-closed) {
+        & + li.jqtree_common {
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 30px;
+            background-color: $theme-border-color;
+            height: 1px;
+          }
+        }
+      }
+
+      &.jqtree-closed {
+        margin: 0;
+      }
+    }
+
+    &.jqtree-ghost {
+      span.jqtree-line {
+        background-color: $theme-color-heading;
+      }
+
+      span.jqtree-circle {
+        border-color: $theme-color-heading;
+      }
+    }
+  }
+
+  .jqtree-moving > .jqtree-element .jqtree-title {
+    outline: none;
+  }
+
+  span.jqtree-border {
+    border-radius: 0;
+    border-color: $theme-light;
+  }
+
+  .jqtree-toggler {
+    position: absolute;
+    height: 16px;
+    width: 15px;
+    background: $theme-light;
+    color: $theme-dark-1;
+    font-size: 1.25rem;
+    border-radius: 1px;
+    top: 12px;
+    left: -8px;
+    transition: background-color 300ms, color 300ms;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+
+    & > i {
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      width: 100%;
+    }
+  }
+
+  .jqtree-element {
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid $theme-border-color;
+    border-top: 0;
+    margin-bottom: 0;
+  }
+
+  .jqtree-title {
+    color: $theme-color-heading;
+    margin-left: 0;
+  }
+
+  ul.jqtree_common {
+    margin-left: 22px;
+    padding-left: 8px;
+  }
+}

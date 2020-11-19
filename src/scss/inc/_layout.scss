@@ -1,0 +1,58 @@
+.main {
+  position: relative;
+}
+
+.content {
+  margin-top: -#{$content-negative-margin};
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 3rem 3rem $sidebar-width;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    padding: 0 2rem 2rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 1rem 2rem;
+  }
+}
+
+.content__inner {
+  margin: auto;
+
+  &:not(.content__inner--sm) {
+    max-width: $container-inner-width;
+  }
+}
+
+.content__inner--sm {
+  max-width: $container-inner-sm-width;
+}
+
+.content__title {
+  padding: 0 $card-spacer-x;
+  text-transform: uppercase;
+  margin: 0 0 1.75rem;
+  height: 56px;
+  display: flex;
+  align-items: flex-end;
+
+  & > h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: $font-weight-normal;
+
+    & > small {
+      font-size: 1rem;
+      display: block;
+      margin-top: 0.5rem;
+      color: $body-color;
+      text-transform: none;
+    }
+  }
+
+  & > .actions {
+    margin-left: auto;
+  }
+}

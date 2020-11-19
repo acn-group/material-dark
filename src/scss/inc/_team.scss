@@ -1,0 +1,42 @@
+.team__item {
+  text-align: center;
+  margin-bottom: 7rem;
+
+  @include media-breakpoint-down(sm) {
+    max-width: 365px;
+    margin: 0 auto 80px;
+  }
+
+  .card-subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+.team__img {
+  display: inline-block;
+  border-radius: 50%;
+  @include size(150px, 150px);
+  margin: 0 auto 1.5rem;
+}
+
+.team__social {
+  margin-top: 2rem;
+
+  & > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: $theme-color-heading;
+    background-color: $theme-dark-2;
+    font-size: 1.25rem;
+    margin: 0 1px;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: $theme-dark-1;
+    }
+  }
+}

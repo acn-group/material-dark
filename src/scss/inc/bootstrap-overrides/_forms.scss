@@ -1,0 +1,41 @@
+.form-control {
+  resize: none;
+  appearance: none;
+  -ms-overflow-style: none;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group--light {
+  & > .form-control {
+    &:not(:disabled) {
+      color: $form-group-light-color;
+    }
+
+    &:disabled {
+      border-color: $form-group-light-disabled-border-color
+    }
+  }
+
+  .select2-selection__rendered {
+    color: $form-group-light-color !important;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select.form-control {
+  background: $select-bg;
+}
+
+
+// validation
+.valid-tooltip,
+.invalid-tooltip {
+  margin-top: 0;
+  padding: 0.25rem 1rem 0.35rem;
+}

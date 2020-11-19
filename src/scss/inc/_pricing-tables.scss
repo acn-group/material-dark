@@ -1,0 +1,103 @@
+.price-table {
+  text-align: center;
+
+  &:not(.price-table--highlight) {
+    margin: 0 -10px;
+
+    & > [class*="col-"] {
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.price-table--highlight {
+  margin: 0;
+
+  & > [class*="col-"] {
+    padding: 0;
+  }
+}
+
+.price-table__item {
+  margin-bottom: 20px;
+  @include card();
+
+  @include media-breakpoint-down(sm) {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.price-table__item--popular {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    margin: -1rem 0 0;
+    box-shadow: 0 -5px 30px rgba($black, 0.25);
+
+    .price-table__header {
+      padding: 2.5rem 2rem 2.5rem;
+    }
+  }
+}
+
+.price-table__header {
+  background-color: $theme-dark-5;
+  border-radius: $border-radius $border-radius 0 0;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.price-table__title {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: $theme-color-heading;
+}
+
+.price-table__desc {
+  margin: 0.3rem 0;
+}
+
+.price-table__price {
+  font-size: 1.8rem;
+  color: $theme-color-heading;
+
+  & > small {
+    font-size: 1rem;
+    position: relative;
+    top: -0.4rem;
+  }
+}
+
+.price-table__info {
+  @include list-unstyled;
+  padding: 1rem 0;
+
+  & > li {
+    padding: 1rem 1.5rem;
+
+    & + li {
+      border-top: 1px solid darken($theme-border-color, 7.5%);
+    }
+  }
+}
+
+.price-table__action {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: $border-radius;
+  color: $theme-color-heading;
+  background-color: $theme-dark-5;
+  transition: background-color 300ms;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($theme-dark-5, 5%);
+    color: $theme-color-heading;
+  }
+}

@@ -1,0 +1,30 @@
+.carousel-item {
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba($black, 0.75);
+  border-radius: $border-radius $border-radius 0 0;
+  bottom: 0;
+  padding-bottom: 30px;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: $font-weight-base;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  &:hover {
+    background-color: rgba($black, 0.25);
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: auto;
+}

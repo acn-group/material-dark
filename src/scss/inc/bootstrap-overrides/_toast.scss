@@ -1,0 +1,30 @@
+.toast-header {
+  & > i {
+    font-size: 1.5rem;
+    margin: -1px 0.5rem 0 0;
+  }
+
+  & > small {
+    margin-left: auto;
+    padding: 0 0.5rem;
+    font-size: $toast-font-size;
+  }
+
+  & > strong {
+    font-weight: $font-weight-bold;
+  }
+
+  [data-dismiss] {
+    margin: -1px -1px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.toast-body {
+  color: $theme-invert-color;
+  font-size: $toast-font-size;
+}

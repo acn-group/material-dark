@@ -1,0 +1,32 @@
+.nav-tabs {
+  .nav-link {
+    border: 0;
+    color: $theme-color-sub;
+    transition: color 300ms;
+    position: relative;
+
+    &:before {
+      content: "";
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $theme-color-heading;
+      transition: transform 300ms, opacity 300ms;
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    &.active {
+      &:before {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 1.5rem 0;
+}

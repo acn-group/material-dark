@@ -1,0 +1,88 @@
+.noUi-target {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  background: $theme-dark-1;
+  margin: 15px 0;
+}
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-vertical {
+  width: 3px;
+}
+
+.noUi-connect {
+  background: $theme-color-heading;
+  box-shadow: none;
+}
+
+.noUi-horizontal,
+.noUi-vertical {
+  .noUi-handle {
+    border-radius: 50%;
+    width: 12px ;
+    height: 12px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: none;
+    background-color: $theme-color-heading;
+    transition: transform 200ms, box-shadow 200ms;
+
+    &.noUi-active {
+      transform: scale(1.5);
+      box-shadow: 0 0 0 8px rgba($theme-light ,0.05);
+    }
+
+    &:before,
+    &:after {
+      display: none;
+      border: 0
+    }
+  }
+}
+
+.noUi-horizontal {
+  .noUi-handle {
+    right: -6px !important;
+    top: -5px;
+  }
+}
+
+.noUi-vertical {
+  .noUi-handle {
+    left: -4px;
+    top: -6px;
+  }
+}
+
+// Optional colors
+$input-slider-colors: (
+  red: $red,
+  blue: $blue,
+  green: $green,
+  orange: $orange,
+  teal: $teal,
+  purple: $purple
+);
+
+@each $color, $value in $input-slider-colors {
+  .input-slider-#{$color} {
+    .noUi-connect {
+      background-color: $value;
+    }
+
+    .noUi-handle {
+      background-color: $value;
+
+      &.noUi-active {
+        transform: scale(1.5);
+        box-shadow: 0 0 0 8px rgba($value ,0.15);
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,175 @@
+$btn-theme-color: $theme-color-heading-sub;
+$btn-theme-hover-color: $theme-color-heading;
+$btn-theme-bg: $theme-dark-5;
+$btn-theme-hover-bg: lighten($btn-theme-bg, 3%);
+$btn-theme-active-bg: $btn-theme-hover-bg;
+
+$btn-theme-dark-color: $theme-color-heading-sub;
+$btn-theme-dark-hover-color: $theme-color-heading;
+$btn-theme-dark-bg: #202c33;
+$btn-theme-dark-hover-bg: darken($btn-theme-dark-bg, 1%);
+$btn-theme-dark-active-bg: $btn-theme-hover-bg;
+
+// Custom theme buttons
+@mixin custom-theme-buttons ($color, $bg, $hover-bg, $hover-color) {
+  background-color: $bg;
+  color: $color;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    background-color: $hover-bg;
+  }
+
+  &.active {
+    color: $hover-color;
+    background-color: lighten($hover-bg, 2.5%);
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.85;
+    color: $theme-color-sub;
+  }
+}
+
+@mixin custom-theme-outline-buttons ($color, $border-color, $hover-bg) {
+  background-color: transparent;
+  border-color: $border-color;
+  color: $color;
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: inherit;
+      background-color: $hover-bg;
+      border-color: transparent;
+    }
+  }
+}
+
+.btn-theme {
+  @include custom-theme-buttons($btn-theme-color, $btn-theme-bg, $btn-theme-hover-bg, $btn-theme-hover-color);
+}
+
+.btn-theme-dark {
+  @include custom-theme-buttons($btn-theme-dark-color, $btn-theme-dark-bg, $btn-theme-dark-hover-bg, $btn-theme-dark-hover-color);
+}
+
+.btn-outline-theme {
+  @include custom-theme-outline-buttons($btn-theme-color, lighten($btn-theme-bg, 10%), $btn-theme-bg);
+}
+
+
+// Icon Buttons
+.btn--icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0 0 1px 0;
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--icon-text {
+  & > [class*="zwicon-"] {
+    font-size: 1.25rem;
+    margin: 0 0.25rem 0 -0.25rem;
+  }
+}
+
+
+// Action and Fixed Buttons
+.btn--action {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba($theme-dark-1, 0.5);
+}
+
+.btn--fixed {
+  position: fixed !important;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+
+// Button Groups
+.btn-group-justified {
+  display: flex;
+  width: 100%;
+  .btn,
+  .btn-group {
+    flex: 1;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.btn-group--colors {
+  & > .btn {
+    box-shadow: none;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    border: 0;
+
+    &:before {
+      @include font-icon('\ea48', 2rem);
+      transition: opacity 200ms;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $white;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center center;
+      @include flex-aligned();
+      padding: 1px 1px 0 0;
+    }
+
+    &.btn:not([class*="bg-"]) {
+      border: 1px solid lighten($theme-dark-5, 10%);
+
+      &:before {
+        color: $body-color;
+      }
+    }
+
+    &.active {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.btn-group,
+.btn-group-vertical {
+  .btn + .btn,
+  .btn + .btn-group,
+  .btn-group + .btn,
+  .btn-group + .btn-group {
+    margin-left: 0;
+  }
+}
+
+.btn-group-vertical {
+  & > .btn:not(:first-child) {
+    margin-top: 0;
+  }
+}

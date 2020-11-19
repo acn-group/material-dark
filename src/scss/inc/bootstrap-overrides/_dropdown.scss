@@ -1,0 +1,24 @@
+.dropdown-menu {
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  font-size: 0.95rem;
+  border-radius: $border-radius;
+  transition: background-color 300ms, color 300ms;
+
+  & > [class*="zwicon-"] {
+    font-size: 1.25rem;
+    vertical-align: top;
+    position: relative;
+    margin: 0 0.25rem 0 -0.25rem;
+    width: 1.5rem;
+  }
+}
+
+.dropdown-header {
+  border-bottom: 1px solid $dropdown-divider-bg;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  font-weight: $font-weight-bold;
+}

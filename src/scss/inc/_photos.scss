@@ -1,0 +1,43 @@
+.photos.card {
+  margin-bottom: 0;
+}
+
+.photos__inner {
+  padding: 2rem;
+}
+
+.lightbox {
+  margin: 0 -4px;
+
+  & > a {
+    position: relative;
+    padding: 0 4px 8px;
+
+    &:before {
+      @include font-icon('\eaa7', 2rem);
+      @include flex-aligned();
+      color: $white;
+      z-index: 1;
+      position: absolute;
+      left: 4px;
+      top: 0;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      background-color: rgba($black, 0.25);
+      opacity: 0;
+      transition: opacity 300ms;
+      border-radius: $border-radius;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    img {
+      border-radius: $border-radius;
+      width: 100%;
+    }
+  }
+}

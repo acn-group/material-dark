@@ -1,0 +1,55 @@
+$w-profile-cover-height: 180px;
+$w-profile-user-img-size: 100px;
+
+.w-profile__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 $card-spacer-x;
+  margin: -$w-profile-user-img-size 0 35px;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: linear-gradient( 0deg, rgba($black, 0.75) 0%, rgba($black, 0) 100%);
+  }
+}
+
+.w-profile__img,
+.w-profile__name {
+  position: relative;
+  z-index: 1;
+}
+
+.w-profile__img {
+  bottom: -20px;
+
+  & > img {
+    width: $w-profile-user-img-size;
+    height: $w-profile-user-img-size;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+}
+
+.w-profile__name {
+  font-size: 1.15rem;
+  color: $headings-color;
+  padding: 1.25rem 1.65rem;
+
+  & > small {
+    display: block;
+    font-size: 0.9rem;
+    color: $body-color;
+  }
+}
+
+.w-profile__cover {
+  height: $w-profile-cover-height;
+  object-fit: cover;
+}

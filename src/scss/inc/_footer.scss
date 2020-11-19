@@ -1,0 +1,35 @@
+.footer {
+  padding: 2rem 1rem 0;
+  text-align: center;
+  color: $theme-color-heading;
+}
+
+.footer__menu {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0 -0.75rem;
+
+  & > a {
+    margin: 0 0.75rem;
+    color: $theme-color-sub;
+    display: inline-block;
+    transition: color 300ms;
+    position: relative;
+
+    & + a {
+      &:before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        top: 0.55rem;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: $theme-color-sub;
+      }
+    }
+
+    &:hover {
+      color: $theme-color-heading;
+    }
+  }
+}

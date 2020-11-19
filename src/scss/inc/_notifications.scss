@@ -1,0 +1,45 @@
+.notifications {
+  max-width: $notifications-width;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: $sidebar-bg;
+  box-shadow: $sidebar-box-shadow;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+
+  &:not(.sidebar--active) {
+    pointer-events: none;
+  }
+
+  @include media-breakpoint-up(xl) {
+    left: 0;
+    transform: translate3d(-20%,0,0);
+  }
+
+  @include media-breakpoint-down(lg) {
+    right: 0;
+    transform: translate3d(20%,0,0);
+
+    .sidebar__close {
+      transform: rotate(180deg);
+      padding-right: 2px;
+    }
+  }
+}
+
+.notifications__panel {
+  &:not(.active) {
+    display: none;
+  }
+}
+
+.notifications__body {
+  height: calc(100vh - #{$sidebar-header-height});
+
+  .scrollbar {
+    padding: 1.5rem 0;
+  }
+}
