@@ -85,7 +85,7 @@ const paths = {
 };
 
 // Удаляет файлы
-const cleanFiles = () => {
+export const cleanFiles = () => {
   return gulp.src(paths.cleanup, {
       read: false,
       allowEmpty: true
@@ -95,7 +95,7 @@ const cleanFiles = () => {
     }))
 }
 
-const cleanDist = () => {
+export const cleanDist = () => {
   return gulp.src(paths.dist.making, {
       read: false,
       allowEmpty: true
@@ -108,7 +108,7 @@ const cleanDist = () => {
 // Компилирует SCSS в CSS
 // Минифицирует CSS
 // Переименовывает CSS
-const handleCSS = () => {
+export const handleCSS = () => {
   return gulp.src(paths.scss.app)
     .pipe(sass())
     .pipe(autoprefixer())
@@ -127,7 +127,7 @@ const handleCSS = () => {
 }
 
 // Инклудит HTML части
-const html = () => {
+export const html = () => {
   return gulp.src(paths.html.src.files)
     .pipe(fileinclude({
       indent: true
@@ -136,7 +136,7 @@ const html = () => {
 }
 
 // Минифицирует и объединяет JS 
-const handleJS = () => {
+export const handleJS = () => {
   return gulp.src(paths.js.src.concat)
     .pipe(concat('app.js'))
     .pipe(uglify())
@@ -147,7 +147,7 @@ const handleJS = () => {
 }
 
 // Копирует файлы в dist 
-const copyToDist = () => {
+export const copyToDist = () => {
   return gulp.src([
       paths.html.files,
       paths.js.files,
@@ -164,7 +164,7 @@ const copyToDist = () => {
 }
 
 // Архивирует dist
-const zipDist = () => {
+export const zipDist = () => {
   return gulp.src(paths.dist.files)
     .pipe(zip('dist.zip'))
     .pipe(gulp.dest(paths.dist.dir))
@@ -201,7 +201,7 @@ export const watch = () => {
 }
 
 
-// Валидыция HTML файлов
+// Валидация HTML файлов
 export const validate = () => {
   return gulp.src(paths.html.files)
     .pipe(w3cjs())
@@ -213,7 +213,7 @@ export const validate = () => {
     }));
 }
 
-// Compress images
+// Сжатие изображений
 export const imgmin = () => {
   return gulp.src(paths.img.files)
     .pipe(cache(imagemin([
@@ -245,11 +245,11 @@ export const imgmin = () => {
 };
 
 
-// Build dist version
+// Билд
 export const build = () => {
   gulp.series(cleanFiles, html, handleCSS, handleJS, copyToDist, zipDist, cleanDist)
 }
 
 
-// Default task
+// Задача по умолчанию
 export default gulp.parallel(build);
