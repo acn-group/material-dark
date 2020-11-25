@@ -29,12 +29,12 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-zopfli": "^7.0.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "@types/overlayscrollbars": "^1.12.0"
   },
   "scripts": {
     "start": "gulp",
     "watch": "gulp watch"
   },
-  "author": "Dimon",
   "license": "UNLICENSED"
 }
